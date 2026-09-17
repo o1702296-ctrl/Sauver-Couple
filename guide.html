@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAUVER TON COUPLE SANS PERDRE TA DIGNITÉ — Guide Complet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --purple-dark: #0d0214;
+            --purple-mid: #1a0528;
+            --purple-card: #250938;
+            --purple-glow: #7c3aed;
+            --pink-accent: #c084fc;
+            --gold-accent: #fbbf24;
+            --text-light: #f8fafc;
+            --text-muted: #cbd5e1;
+            --font-main: 'Inter', sans-serif;
+            --font-heading: 'Outfit', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background: linear-gradient(135deg, #0d0214 0%, #1a0528 50%, #29073b 100%);
+            color: var(--text-light);
+            line-height: 1.75;
+            min-height: 100vh;
+        }
+
+        /* Top Sticky Bar with Language Dropdown & Nav toggle */
+        .guide-top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(13, 2, 20, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(192, 132, 252, 0.25);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .guide-logo {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .guide-logo i {
+            color: var(--pink-accent);
+        }
+
+        .custom-lang-dropdown {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 9, 56, 0.9);
+            padding: 5px 14px;
+            border-radius: 20px;
+            border: 1.5px solid rgba(192, 132, 252, 0.4);
+        }
+
+        #custom-language-select {
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #custom-language-select option {
+            background: #1a0528;
+            color: #ffffff;
+        }
+
+        /* Main Reader Layout */
+        .reader-container {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: calc(100vh - 60px);
+        }
+
+        /* Sidebar Navigation */
+        .reader-sidebar {
+            background: rgba(26, 5, 40, 0.7);
+            border-right: 1px solid rgba(192, 132, 252, 0.15);
+            padding: 25px 15px;
+            position: sticky;
+            top: 60px;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+        }
+
+        .sidebar-title {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--pink-accent);
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-bottom: 4px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: rgba(124, 58, 237, 0.25);
+            color: #ffffff;
+            border-left: 3px solid var(--pink-accent);
+        }
+
+        /* Content Area */
+        .reader-content {
+            padding: 40px 50px;
+            max-width: 900px;
+        }
+
+        .chapter-card-box {
+            background: rgba(37, 9, 56, 0.6);
+            border: 1px solid rgba(192, 132, 252, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .chapter-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--purple-glow), var(--pink-accent));
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 0.8rem;
+            padding: 4px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        h1.book-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        h2.chapter-heading {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin: 25px 0 15px;
+        }
+
+        h3.section-heading {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--pink-accent);
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .quote-box {
+            background: rgba(251, 191, 36, 0.08);
+            border-left: 4px solid var(--gold-accent);
+            padding: 20px 25px;
+            border-radius: 0 14px 14px 0;
+            margin: 25px 0;
+            font-style: italic;
+            color: #fef08a;
+            font-size: 1.1rem;
+        }
+
+        .advice-box {
+            background: rgba(124, 58, 237, 0.15);
+            border: 1px solid rgba(192, 132, 252, 0.3);
+            border-radius: 14px;
+            padding: 22px;
+            margin: 25px 0;
+        }
+
+        .advice-box h4 {
+            color: var(--pink-accent);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .plan-day-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(192, 132, 252, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .plan-day-card h5 {
+            color: var(--gold-accent);
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        /* Responsive Mobile Layout */
+        @media (max-width: 900px) {
+            .reader-container {
+                grid-template-columns: 1fr;
+            }
+            .reader-sidebar {
+                position: static;
+                height: auto;
+                max-height: 250px;
+            }
+            .reader-content {
+                padding: 20px 16px;
+            }
+            .chapter-card-box {
+                padding: 25px 18px;
+            }
+            h1.book-title {
+                font-size: 1.8rem;
+            }
+            h2.chapter-heading {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Obliterate Google Translate Top Banner & Fix Body Position */
+        .goog-te-banner-frame.skiptranslate,
+        .goog-te-banner-frame,
+        iframe.goog-te-banner-frame,
+        iframe.skiptranslate,
+        .VIpgJd-Z44p5e-FW12eb-tjhup,
+        #goog-gt-tt,
+        .goog-te-balloon-frame {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            height: 0 !important;
+        }
+        body {
+            top: 0px !important;
+            position: static !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation & Language Selector Bar -->
+    <div class="guide-top-bar">
+        <div class="guide-logo">
+            <i class="fa-solid fa-crown"></i>
+            <span>SAUVER TON COUPLE — LE GUIDE OFFICIEL</span>
+        </div>
+
+        <div class="custom-lang-dropdown">
+            <i class="fa-solid fa-globe text-pink"></i>
+            <select id="custom-language-select" onchange="changePageLanguage(this.value)">
+                <option value="fr"> Français (FR)</option>
+                <option value="en"> English (EN)</option>
+                <option value="es"> Español (ES)</option>
+                <option value="de"> Deutsch (DE)</option>
+                <option value="it"> Italiano (IT)</option>
+                <option value="pt"> Português (PT)</option>
+                <option value="nl"> Nederlands (NL)</option>
+                <option value="ar"> العربية (AR)</option>
+                <option value="ru"> Русский (RU)</option>
+                <option value="zh-CN"> 中文 (ZH)</option>
+                <option value="ja"> 日本語 (JA)</option>
+                <option value="tr"> Türkçe (TR)</option>
+                <option value="pl"> Polski (PL)</option>
+                <option value="sv"> Svenska (SV)</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Reader Layout -->
+    <div class="reader-container">
+        <!-- Sidebar Navigation -->
+        <div class="reader-sidebar">
+            <div class="sidebar-title">Table des Matières</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#intro" class="nav-link active"><i class="fa-solid fa-bookmark"></i> Avant-Propos & Intro</a></li>
+                <li class="nav-item"><a href="#chap1" class="nav-link"><i class="fa-solid fa-shield-heart"></i> Chap 1: Le Diagnostic de l'Ombre</a></li>
+                <li class="nav-item"><a href="#chap2" class="nav-link"><i class="fa-solid fa-user-gear"></i> Chap 2: Le Miroir de l'Homme</a></li>
+                <li class="nav-item"><a href="#chap3" class="nav-link"><i class="fa-solid fa-hand-fist"></i> Chap 3: L'Art de se Faire Respecter</a></li>
+                <li class="nav-item"><a href="#chap4" class="nav-link"><i class="fa-solid fa-fire-flame-curved"></i> Chap 4: Le Lit Froid</a></li>
+                <li class="nav-item"><a href="#chap5" class="nav-link"><i class="fa-solid fa-comments"></i> Chap 5: Communication Haute Tension</a></li>
+                <li class="nav-item"><a href="#chap6" class="nav-link"><i class="fa-solid fa-users-line"></i> Chap 6: Gérer la Tribu</a></li>
+                <li class="nav-item"><a href="#chap7" class="nav-link"><i class="fa-solid fa-children"></i> Chap 7: Éduquer à Deux</a></li>
+                <li class="nav-item"><a href="#chap8" class="nav-link"><i class="fa-solid fa-bolt"></i> Chap 8: Frustration en Force</a></li>
+                <li class="nav-item"><a href="#chap9" class="nav-link"><i class="fa-solid fa-calendar-check"></i> Chap 9: Plan 30 Jours Concret</a></li>
+                <li class="nav-item"><a href="#chap10" class="nav-link"><i class="fa-solid fa-scale-balanced"></i> Chap 10: Quand est-il Temps de Partir ?</a></li>
+                <li class="nav-item"><a href="#conclusion" class="nav-link"><i class="fa-solid fa-flag-checkered"></i> Conclusion & Bilan</a></li>
+                <li class="nav-item"><a href="#annexe" class="nav-link"><i class="fa-solid fa-toolbox"></i> Annexe: Outils Essentiels</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="reader-content">
+            <!-- Intro / Cover Card -->
+            <div class="chapter-card-box" id="intro">
+                <span class="chapter-badge">Guide Premium Pour l'Homme Moderne</span>
+                <h1 class="book-title">SAUVER TON COUPLE SANS PERDRE TA DIGNITÉ</h1>
+                <p style="font-size: 1.2rem; color: var(--gold-accent); font-weight: 700; margin-bottom: 20px;">
+                    Le guide honnête que tu aurais voulu avoir avant la première dispute.
+                </p>
+
+                <div class="quote-box">
+                    "Ce n'est pas en regardant la tempête qu'on apprend à naviguer. C'est en comprenant le vent, en apprenant à tenir le gouvernail, et en ayant le courage de rester au capitaine."
+                </div>
+
+                <h3 class="section-heading">Avant-Propos : Ce que ce livre va changer dans ta vie</h3>
+                <p>
+                    Ce livre est né d'une conviction simple : les hommes qui souffrent dans leur foyer manquent rarement d'amour. Ils manquent d'outils. Ils manquent de mots. Ils manquent d'une voix qui leur parle avec honnêteté et bienveillance en même temps.
+                </p>
+                <p>
+                    Depuis des années, j'observe des hommes extraordinaires – des pères dévoués, des travailleurs acharnés, des hommes au cœur généreux – se perdre dans des foyers qui ressemblent de plus en plus à des champs de mines émotionnels. Ils meurent à petit feu. Ils retiennent leur souffle. Ils espèrent que demain sera différent sans changer quoi que ce soit aujourd'hui.
+                </p>
+                <p>
+                    Ce guide n'est pas une promesse de miracle. Mais un homme qui comprend ce qui se passe, qui prend sa part de responsabilité avec lucidité, et qui agit avec cohérence peut transformer l'atmosphère de son foyer de façon significative et durable.
+                </p>
+            </div>
+
+            <!-- Chapitre 1 -->
+            <div class="chapter-card-box" id="chap1">
+                <span class="chapter-badge">Chapitre 1</span>
+                <h2 class="chapter-heading">Le Diagnostic de l'Ombre</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Pourquoi tu as l'impression de n'être qu'un portefeuille - et ce que ça cache vraiment</p>
+
+                <p>
+                    Tu paies le loyer. Tu remplis le frigo. Tu répares ce qui est cassé. Tu meurs d'épuisement au travail. Et pourtant, à la fin de la journée, tu as cette sensation étrange – comme si ta femme te regardait comme on regarde un distributeur automatique. Elle appuie sur les boutons quand elle a besoin de quelque chose, et le reste du temps, tu es juste... là.
+                </p>
+                <p>
+                    Si tu te reconnais dans ces mots, sache que tu traverses ce que j'appelle <strong>Le Syndrome du Pourvoyeur Invisible</strong>. Et c'est bien plus commun que tu ne le crois.
+                </p>
+
+                <div class="quote-box">
+                    "Un couple ne meurt pas d'un grand choc. Il meurt de mille petits abandons. Mille petites fois où l'on a choisi le confort du silence à la difficulté de la connexion."
+                </div>
+
+                <h3 class="section-heading">Les signes que la connexion émotionnelle est rompue :</h3>
+                <ul style="margin-left: 20px; color: var(--text-muted); margin-bottom: 20px;">
+                    <li><strong>Elle ne te raconte plus rien de personnel.</strong> Ses joies, ses angoisses, ses projets – tu les apprends par quelqu'un d'autre.</li>
+                    <li><strong>Les conversations sont purement logistiques.</strong> 'T'as payé l'électricité ?', 'Le petit a rendez-vous jeudi.'</li>
+                    <li><strong>Elle ne rit plus avec toi.</strong> Elle peut encore rire – avec ses amies, son téléphone – mais plus avec toi.</li>
+                    <li><strong>Les témoignages d'affection ont disparu.</strong> Plus de main tendue, plus de regard prolongé.</li>
+                </ul>
+            </div>
+
+            <!-- Chapitre 2 -->
+            <div class="chapter-card-box" id="chap2">
+                <span class="chapter-badge">Chapitre 2</span>
+                <h2 class="chapter-heading">Le Miroir de l'Homme</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Avant de la changer elle, regarde-toi. Retrouver sa confiance et son leadership personnel.</p>
+
+                <p>
+                    Ce chapitre ne te demande pas de t'écraser ni de porter toute la responsabilité. Il te demande simplement de faire ce que font les hommes forts : regarder leur part du tableau sans détourner les yeux.
+                </p>
+                <div class="quote-box">
+                    "Tu ne peux pas donner à ton couple ce que tu n'as pas d'abord. Un homme vide donne du vide. Un homme plein donne de l'abondance. Remplis-toi d'abord."
+                </div>
+
+                <h3 class="section-heading">Les 5 piliers de la confiance masculine dans le couple :</h3>
+                <ol style="margin-left: 20px; color: var(--text-muted); margin-bottom: 20px;">
+                    <li><strong>L'intégrité :</strong> Tu fais ce que tu dis. Tes paroles et tes actes sont alignés.</li>
+                    <li><strong>L'auto-suffisance émotionnelle :</strong> Sa colère ne te détruit pas, sa froideur ne te paralyse pas.</li>
+                    <li><strong>La compétence :</strong> Tu développes des aptitudes qui nourrissent ton estime personnelle.</li>
+                    <li><strong>La mission :</strong> Tu as une raison d'être au-delà du couple. Un but inspirant.</li>
+                    <li><strong>L'appartenance :</strong> Un cercle masculin solide qui te soutient et te challenge.</li>
+                </ol>
+            </div>
+
+            <!-- Chapitre 3 -->
+            <div class="chapter-card-box" id="chap3">
+                <span class="chapter-badge">Chapitre 3</span>
+                <h2 class="chapter-heading">L'Art de se Faire Respecter</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Se faire respecter sans crier, sans bouder, et sans perdre ta dignité</p>
+
+                <p>
+                    Le manque de respect dans un couple n'arrive généralement pas par sadisme. Il arrive parce que quelqu'un a appris, consciemment ou non, qu'il peut se le permettre.
+                </p>
+
+                <div class="advice-box">
+                    <h4><i class="fa-solid fa-lightbulb"></i> La formule de la frontière calme :</h4>
+                    <p style="color: #ffffff; font-weight: 600;">
+                        "Ce que tu viens de dire m'a fait mal. Je ne suis pas d'accord pour être parlé comme ça. On peut en discuter si tu veux, mais pas sur ce ton."
+                    </p>
+                </div>
+
+                <div class="quote-box">
+                    "Un lion n'a pas besoin de rappeler aux autres animaux qu'il est un lion. Sa présence suffit. Sois ce lion-là dans ton foyer."
+                </div>
+            </div>
+
+            <!-- Chapitre 4 -->
+            <div class="chapter-card-box" id="chap4">
+                <span class="chapter-badge">Chapitre 4</span>
+                <h2 class="chapter-heading">Le Lit Froid</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Briser la grève de l'intimité - comprendre le désir féminin et reconnecter sans mendier</p>
+
+                <p>
+                    Pour beaucoup d'hommes, le désir est souvent spontané. Pour beaucoup de femmes, le désir est <strong>contextuel et émotionnel</strong>. Son corps suit son cœur. Si le cœur est fermé, le corps l'est aussi.
+                </p>
+
+                <div class="quote-box">
+                    "Pour une femme, le désir commence souvent en dehors de la chambre – dans la cuisine, dans une conversation, dans un regard. Le lit est la conclusion, pas le point de départ."
+                </div>
+
+                <h3 class="section-heading">4 Étapes pour reconnecter vraiment :</h3>
+                <p>1. Le retour des petits gestes sans attente immédiate.</p>
+                <p>2. La redécouverte de sa féminité (la regarder comme la femme qu'elle est).</p>
+                <p>3. Créer des moments privilégiés juste pour deux.</p>
+                <p>4. La conversation ouverte sur l'intimité, dans un moment de calme.</p>
+            </div>
+
+            <!-- Chapitre 5 -->
+            <div class="chapter-card-box" id="chap5">
+                <span class="chapter-badge">Chapitre 5</span>
+                <h2 class="chapter-heading">La Communication Haute Tension</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Parler de tes besoins sans que ça finisse en dispute - l'écoute active et l'affirmation de soi</p>
+
+                <div class="quote-box">
+                    "On ne résout pas un problème en criant plus fort. On le résout en écoutant plus profondément."
+                </div>
+
+                <h3 class="section-heading">Règles d'or de la communication :</h3>
+                <p><strong>Règle 1 :</strong> Parler en 'Je', pas en 'Tu' accusateur (ex: "Je me sens seul quand..." au lieu de "Tu ne m'écoutes jamais !").</p>
+                <p><strong>Règle 2 :</strong> Pratiquer le protocole de pause dès que l'émotion déborde ("J'ai besoin de 20 minutes pour me calmer, on reprend après").</p>
+            </div>
+
+            <!-- Chapitre 6 -->
+            <div class="chapter-card-box" id="chap6">
+                <span class="chapter-badge">Chapitre 6</span>
+                <h2 class="chapter-heading">Gérer la Tribu</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Famille, belle-famille et influences extérieures - mettre des frontières saines sans faire la guerre</p>
+
+                <div class="quote-box">
+                    "Construis un mur autour de ton foyer - pas pour empêcher l'amour d'entrer, mais pour empêcher le chaos de s'y installer."
+                </div>
+            </div>
+
+            <!-- Chapitre 7 -->
+            <div class="chapter-card-box" id="chap7">
+                <span class="chapter-badge">Chapitre 7</span>
+                <h2 class="chapter-heading">Éduquer à Deux</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Retrouver son autorité paternelle - faire équipe sur l'éducation sans être contredit</p>
+
+                <div class="quote-box">
+                    "Vos enfants n'ont pas besoin de parents parfaits. Ils ont besoin de parents unis. L'unité est plus puissante que la perfection."
+                </div>
+            </div>
+
+            <!-- Chapitre 8 -->
+            <div class="chapter-card-box" id="chap8">
+                <span class="chapter-badge">Chapitre 8</span>
+                <h2 class="chapter-heading">Transformer la Frustration en Force</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Gérer sa colère et sa solitude émotionnelle - trouver ses propres soutiens</p>
+
+                <div class="quote-box">
+                    "La force d'un homme ne se mesure pas au fait qu'il ne pleure pas. Elle se mesure à sa capacité à traverser la douleur sans se perdre. Traverser - pas éviter."
+                </div>
+            </div>
+
+            <!-- Chapitre 9 -->
+            <div class="chapter-card-box" id="chap9">
+                <span class="chapter-badge">Chapitre 9</span>
+                <h2 class="chapter-heading">Le Plan d'Action sur 30 Jours</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">Des exercices quotidiens pour transformer l'atmosphère de ta maison, un jour à la fois</p>
+
+                <div class="plan-day-card">
+                    <h5>Jour 1 | L'inventaire honnête</h5>
+                    <p>Prends 20 minutes. Note les 3 comportements que tu veux changer et les 3 forces que tu veux développer.</p>
+                </div>
+
+                <div class="plan-day-card">
+                    <h5>Jour 2 | La détox numérique du soir</h5>
+                    <p>De 19h à l'heure du coucher, pose ton téléphone et sois vraiment présent avec ta famille.</p>
+                </div>
+
+                <div class="plan-day-card">
+                    <h5>Jour 3 | Le geste non-intéressé</h5>
+                    <p>Fais une chose gentille pour ta femme sans rien attendre en retour.</p>
+                </div>
+
+                <div class="plan-day-card">
+                    <h5>Jours 4 à 30 | Routine de progression</h5>
+                    <p>Intègre le sport, la communication en 'Je', le rendez-vous en tête-à-tête et les moments de bilan.</p>
+                </div>
+
+                <div class="quote-box">
+                    "Trente jours de petits gestes valent plus qu'une grande déclaration d'amour non suivie d'actes."
+                </div>
+            </div>
+
+            <!-- Chapitre 10 -->
+            <div class="chapter-card-box" id="chap10">
+                <span class="chapter-badge">Chapitre 10</span>
+                <h2 class="chapter-heading">Quand est-il Temps de Partir ?</h2>
+                <p style="color: var(--pink-accent); font-weight: 700;">La sagesse de savoir si le combat en vaut encore la peine - et comment le décider avec dignité</p>
+
+                <div class="quote-box">
+                    "Parfois, aimer quelqu'un profondément, c'est aussi reconnaître avec sagesse que le meilleur pour vous deux est un nouveau chemin. Le courage n'est pas toujours dans le fait de rester."
+                </div>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="chapter-card-box" id="conclusion">
+                <span class="chapter-badge">Conclusion</span>
+                <h2 class="chapter-heading">Le Mot Final : Sois cet homme</h2>
+                <p>
+                    Tu as le pouvoir de changer l'atmosphère de ton foyer. Pas en changeant ta femme – en te changeant toi. En devenant l'homme que tu es capable d'être. Celui qui écoute vraiment. Qui reste calme sous la pression. Qui tient ses engagements. Qui se respecte et respecte les autres.
+                </p>
+
+                <div class="quote-box">
+                    "La version de toi qui a commencé ce guide et la version de toi qui le termine ne sont pas la même personne. Bienvenue dans ta nouvelle peau."
+                </div>
+            </div>
+
+            <!-- Annexe -->
+            <div class="chapter-card-box" id="annexe">
+                <span class="chapter-badge">Annexe</span>
+                <h2 class="chapter-heading">Les 10 Règles d'Or du Guide</h2>
+                <ol style="margin-left: 20px; color: var(--text-muted); line-height: 2;">
+                    <li>Un homme qui se respecte inspire le respect. Un homme qui s'efface l'invite à disparaître.</li>
+                    <li>La colère est de l'information. Demande-toi ce qu'elle essaie de te dire.</li>
+                    <li>L'écoute active est ton arme la plus puissante dans une dispute.</li>
+                    <li>Parle toujours en 'Je', jamais en 'Tu' accusateur.</li>
+                    <li>La cohérence vaut plus que la perfection. Fais ce que tu dis.</li>
+                    <li>Ton foyer est sacré. Protège-le des influences extérieures.</li>
+                    <li>Un homme avec un projet est infiniment plus attractif qu'un homme sans direction.</li>
+                    <li>Le corps, l'esprit, les projets, les amis – tout ça nourrit ton couple.</li>
+                    <li>L'intimité physique revient quand l'intimité émotionnelle est restaurée.</li>
+                    <li>Sauver ton couple commence par te sauver toi-même.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Complete Multi-Language Synchronization Engine -->
+    <div id="google_translate_element" style="position: absolute; left: -9999px; top: -9999px; opacity: 0;"></div>
+    <script type="text/javascript">
+        function setTranslateCookie(langCode) {
+            var domain = window.location.hostname;
+            var cookieVal = "/fr/" + langCode;
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + domain + ";";
+            document.cookie = "googtrans=" + cookieVal + "; path=/;";
+            if (domain && domain !== 'localhost' && domain !== '127.0.0.1') {
+                document.cookie = "googtrans=" + cookieVal + "; path=/; domain=" + domain + ";";
+                document.cookie = "googtrans=" + cookieVal + "; path=/; domain=." + domain + ";";
+            }
+        }
+
+        function resetToFrenchDefault() {
+            var domain = window.location.hostname;
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + domain + ";";
+            document.cookie = "googtrans=/fr/fr; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=/fr/fr; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + domain + ";";
+            localStorage.removeItem('selected_landing_lang');
+        }
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        function changePageLanguage(langCode) {
+            if (!langCode || langCode === 'fr') {
+                resetToFrenchDefault();
+                location.reload();
+                return;
+            }
+
+            localStorage.setItem('selected_landing_lang', langCode);
+            setTranslateCookie(langCode);
+
+            var googleSelect = document.querySelector('.goog-te-combo');
+            if (googleSelect) {
+                googleSelect.value = langCode;
+                googleSelect.dispatchEvent(new Event('change'));
+            }
+
+            var selectElem = document.getElementById('custom-language-select');
+            if (selectElem) {
+                selectElem.value = langCode;
+            }
+
+            setTimeout(function() {
+                location.reload();
+            }, 150);
+        }
+
+        function syncLanguageDropdownUI() {
+            var savedLang = localStorage.getItem('selected_landing_lang');
+            var match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
+            var activeLang = savedLang || 'fr';
+
+            if (match && match[1]) {
+                var parts = match[1].split('/');
+                if (parts.length >= 3 && parts[2]) {
+                    activeLang = parts[2];
+                }
+            }
+
+            var selectElem = document.getElementById('custom-language-select');
+            if (selectElem && activeLang) {
+                selectElem.value = activeLang;
+            }
+        }
+
+        function hideGTBanner() {
+            var banners = document.querySelectorAll('.goog-te-banner-frame, iframe.skiptranslate, .VIpgJd-Z44p5e-FW12eb-tjhup');
+            banners.forEach(function(b) {
+                b.style.display = 'none';
+                b.style.visibility = 'hidden';
+            });
+            if (document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            syncLanguageDropdownUI();
+            hideGTBanner();
+        });
+        window.addEventListener('load', function() {
+            syncLanguageDropdownUI();
+            hideGTBanner();
+        });
+        setInterval(hideGTBanner, 100);
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
