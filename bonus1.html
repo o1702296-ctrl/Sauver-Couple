@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BONUS 1 : 10 Phrases Pour Désamorcer Un Conflit Immédiatement — Lina Rela</title>
-    <meta name="description" content="Bonus 1 par Lina Rela : 10 phrases simples et prêtes à utiliser pour désamorcer un conflit immédiatement et calmer une discussion de couple.">
+    <title>BONUS 1 : 10 Phrases pour Désamorcer un Conflit Immédiatement — Lina Rela</title>
+    <meta name="description" content="Bonus 1 du guide Sauver Ton Couple par Lina Rela. 10 phrases simples et efficaces à utiliser dans les moments tendus.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <style>
         :root {
             --pdf-bg: #150529;
-            --page-bg: #2d0b28;
-            --page-bg-inner: #360d31;
-            --text-color: #fce7f3;
-            --text-heading: #ffffff;
-            --accent-gold: #fbbf24;
-            --accent-purple: #c084fc;
-            --accent-pink: #f43f5e;
-            --border-color: rgba(244, 63, 94, 0.3);
+            --page-bg: #faf5ff;
+            --text-color: #2b2b2b;
+            --text-heading: #4c1d95;
+            --accent-purple: #7e22ce;
+            --accent-purple-light: #a855f7;
+            --accent-violet-neon: #c084fc;
+            --border-color: #e9d5ff;
+            --box-bg: #fcf4ff;
             --font-main: 'Inter', sans-serif;
             --font-heading: 'Outfit', sans-serif;
         }
@@ -32,14 +32,14 @@
             background-color: var(--pdf-bg);
             font-family: var(--font-main);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.65;
             scroll-behavior: smooth;
         }
 
         body {
             top: 0px !important;
             position: static !important;
-            padding-top: 70px;
+            padding-top: 75px;
             padding-bottom: 60px;
         }
 
@@ -48,7 +48,7 @@
         #goog-gt-tt { display: none !important; }
         .goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
 
-        /* Navigation Toolbar */
+        /* Sticky Navigation Toolbar */
         .pdf-toolbar {
             position: fixed;
             top: 0;
@@ -56,17 +56,15 @@
             right: 0;
             height: 65px;
             background: #1a0636;
-            backdrop-filter: blur(12px);
-            color: #f9f9fa;
+            border-bottom: 1.5px solid #a855f7;
+            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0 24px;
             z-index: 2000;
             box-shadow: 0 4px 25px rgba(0,0,0,0.6);
-            border-bottom: 1.5px solid #a855f7;
-            flex-wrap: wrap;
-            gap: 12px;
+            backdrop-filter: blur(10px);
         }
 
         .pdf-title-info {
@@ -80,7 +78,30 @@
             white-space: nowrap;
         }
 
-        .pdf-title-info i { color: #f43f5e; font-size: 1.2rem; }
+        .pdf-title-info i { color: var(--accent-violet-neon); font-size: 1.2rem; }
+
+        .pdf-nav-links {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .pdf-nav-link {
+            color: #e9d5ff;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 6px;
+            background: rgba(168, 85, 247, 0.15);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .pdf-nav-link:hover {
+            background: rgba(168, 85, 247, 0.35);
+            color: #ffffff;
+        }
 
         .pdf-controls-right {
             display: flex;
@@ -88,45 +109,14 @@
             gap: 14px;
         }
 
-        .btn-nav-back {
-            background: rgba(168, 85, 247, 0.25);
-            color: #ffffff;
-            border: 1px solid #a855f7;
-            padding: 7px 15px;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 0.85rem;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.2s ease;
-        }
-
-        .btn-nav-back:hover {
-            background: #a855f7;
-            color: #ffffff;
-            transform: translateY(-2px);
-        }
-
         .pdf-lang-dropdown {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: #3b143c;
+            background: #2e1065;
             padding: 6px 14px;
             border-radius: 20px;
-            border: 1.5px solid rgba(192, 132, 252, 0.5);
-            transition: all 0.2s ease;
-        }
-
-        .pdf-lang-dropdown:hover {
-            border-color: var(--accent-gold);
-        }
-
-        .pdf-lang-dropdown i {
-            color: var(--accent-gold);
-            font-size: 0.95rem;
+            border: 1.5px solid #a855f7;
         }
 
         #custom-language-select {
@@ -140,13 +130,13 @@
         }
 
         #custom-language-select option {
-            background: #1e0720;
+            background: #1a0636;
             color: #ffffff;
         }
 
         /* Document Container & Page Structure */
         .pdf-document-container {
-            max-width: 780px;
+            max-width: 850px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -155,92 +145,120 @@
         }
 
         .pdf-page {
-            background: linear-gradient(180deg, #360d31 0%, #290825 100%);
+            background: var(--page-bg);
             width: 100%;
-            min-height: 1050px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-            border-radius: 12px;
-            padding: 55px 60px 45px;
+            min-height: 1100px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            padding: 55px 65px 45px;
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            border: 1px solid rgba(192, 132, 252, 0.25);
+            border: 1px solid var(--border-color);
+        }
+
+        .pdf-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 0.85rem;
+            color: var(--accent-purple);
+            font-style: italic;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-bottom: 28px;
+            font-weight: 600;
+        }
+
+        .pdf-footer {
+            border-top: 1.5px solid var(--border-color);
+            padding-top: 14px;
+            margin-top: 32px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--accent-purple);
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .pdf-body { flex: 1; }
+
+        /* Cover Page Styling */
+        .pdf-page.cover-page {
+            background: linear-gradient(135deg, #3b0764 0%, #1e0538 60%, #120326 100%);
             color: #ffffff;
+            padding: 70px 45px 50px;
+            text-align: center;
+            justify-content: space-between;
+            border: none;
             overflow: hidden;
         }
 
-        /* COVER PAGE STYLING */
-        .pdf-page.cover-page {
-            background: linear-gradient(180deg, #4d103f 0%, #2b061a 100%);
-            padding: 0;
-            text-align: center;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .cover-top-banner {
-            width: 100%;
-            background: #801850;
-            padding: 22px 20px;
-            font-family: var(--font-heading);
-            font-size: 2.2rem;
-            font-weight: 800;
-            letter-spacing: 2px;
+        .cover-badge {
+            background: linear-gradient(135deg, #7e22ce, #a855f7);
             color: #ffffff;
-            text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-
-        .cover-content {
-            padding: 40px 30px;
-            max-width: 600px;
-        }
-
-        .cover-main-title {
             font-family: var(--font-heading);
-            font-size: 2.6rem;
-            font-weight: 800;
-            line-height: 1.25;
+            font-size: 1.7rem;
+            font-weight: 900;
+            padding: 14px 32px;
+            border-radius: 10px;
+            display: inline-block;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 20px rgba(168, 85, 247, 0.45);
+            margin-top: 30px;
+            margin-bottom: 35px;
+        }
+
+        .cover-title {
+            font-size: 3.4rem;
+            font-weight: 900;
+            line-height: 1.15;
+            margin: 20px 0 30px;
+            font-family: var(--font-heading);
             color: #ffffff;
-            margin-bottom: 25px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .cover-author {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-violet-neon);
+            font-style: italic;
+            font-family: var(--font-heading);
+            margin-top: 10px;
         }
 
         .cover-illustration {
-            position: relative;
+            margin: 35px auto 20px;
             width: 220px;
             height: 220px;
-            margin: 20px auto 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .cover-illustration svg {
-            width: 100%;
-            height: 100%;
-            fill: #ffffff;
-            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
-        }
-
-        .cover-wave-svg {
-            width: 100%;
-            height: 120px;
-            margin-bottom: -5px;
-        }
-
-        /* INNER PAGES STYLING */
-        .page-intro-text {
-            font-size: 1.15rem;
+        /* Phrase List Elements */
+        .intro-box {
+            background: #f3e8ff;
+            border-left: 4px solid #7e22ce;
+            padding: 22px 26px;
+            border-radius: 8px;
+            font-size: 1.05rem;
             line-height: 1.75;
-            color: #f3d5ea;
+            color: #3b0764;
             margin-bottom: 35px;
-            font-weight: 400;
+            box-shadow: 0 4px 15px rgba(126, 34, 206, 0.08);
         }
 
-        .section-heading {
+        .section-title {
             font-family: var(--font-heading);
             font-size: 1.6rem;
             font-weight: 800;
-            color: #ffffff;
+            color: var(--text-heading);
             margin-bottom: 25px;
+            border-bottom: 2px solid #e9d5ff;
+            padding-bottom: 8px;
         }
 
         .phrase-list {
@@ -250,53 +268,61 @@
         }
 
         .phrase-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(244, 63, 94, 0.2);
-            border-left: 4px solid var(--accent-pink);
-            padding: 16px 20px;
-            border-radius: 8px;
-            font-size: 1.15rem;
-            line-height: 1.6;
-            color: #ffffff;
+            background: #ffffff;
+            border: 1.5px solid #e9d5ff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            box-shadow: 0 4px 15px rgba(126, 34, 206, 0.05);
             transition: all 0.2s ease;
         }
 
         .phrase-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            transform: translateX(5px);
-            border-left-color: var(--accent-gold);
+            border-color: #a855f7;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(168, 85, 247, 0.15);
         }
 
-        .phrase-num {
-            font-weight: 800;
-            color: var(--accent-pink);
-            margin-right: 6px;
-        }
-
-        .pdf-header {
-            font-size: 0.85rem;
-            color: #c084fc;
-            font-style: italic;
-            border-bottom: 1px solid rgba(192, 132, 252, 0.2);
-            padding-bottom: 12px;
-            margin-bottom: 28px;
-            text-align: right;
-        }
-
-        .pdf-footer {
-            text-align: right;
-            font-size: 1.1rem;
+        .phrase-number {
+            background: linear-gradient(135deg, #7e22ce, #a855f7);
             color: #ffffff;
+            font-family: var(--font-heading);
+            font-weight: 900;
+            font-size: 1.15rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 3px 10px rgba(126, 34, 206, 0.3);
+        }
+
+        .phrase-text {
+            font-size: 1.15rem;
             font-weight: 700;
-            padding-top: 15px;
+            color: #3b0764;
+            line-height: 1.6;
+            flex: 1;
+            padding-top: 4px;
         }
 
         /* Responsive */
-        @media (max-width: 600px) {
-            .pdf-page { padding: 30px 20px; min-height: auto; }
-            .cover-top-banner { font-size: 1.6rem; padding: 16px; }
-            .cover-main-title { font-size: 1.8rem; }
-            .phrase-card { font-size: 1rem; padding: 14px; }
+        @media (max-width: 768px) {
+            .pdf-toolbar { padding: 10px 14px; height: auto; justify-content: center; }
+            .pdf-page { padding: 35px 25px 30px; min-height: auto; }
+            .cover-title { font-size: 2.3rem; }
+            .cover-badge { font-size: 1.3rem; padding: 10px 20px; }
+        }
+
+        @media print {
+            body { padding: 0; background: #fff; }
+            .pdf-toolbar { display: none !important; }
+            .pdf-document-container { gap: 0; max-width: 100%; padding: 0; }
+            .pdf-page { box-shadow: none; border: none; border-radius: 0; page-break-after: always; min-height: 100vh; padding: 40px; }
         }
     </style>
 </head>
@@ -305,20 +331,21 @@
     <!-- Hidden Google Translate Element -->
     <div id="google_translate_element" style="display:none!important;"></div>
 
-    <!-- Navigation Toolbar -->
+    <!-- Sticky Navigation Toolbar -->
     <header class="pdf-toolbar">
         <div class="pdf-title-info">
-            <i class="fa-solid fa-heart-circle-bolt"></i>
+            <i class="fa-solid fa-heart-circle-check"></i>
             <span>BONUS 1 — Lina Rela</span>
         </div>
 
-        <div class="pdf-controls-right">
-            <a href="guide.html" class="btn-nav-back">
-                <i class="fa-solid fa-book"></i> Voir le Guide Principal
-            </a>
+        <div class="pdf-nav-links">
+            <a href="guide.html" class="pdf-nav-link"><i class="fa-solid fa-book"></i> Guide Principal</a>
+            <a href="index.html" class="pdf-nav-link"><i class="fa-solid fa-house"></i> Accueil</a>
+        </div>
 
+        <div class="pdf-controls-right">
             <div class="pdf-lang-dropdown">
-                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-globe" style="color: var(--accent-violet-neon);"></i>
                 <select id="custom-language-select" onchange="changePageLanguage(this.value)">
                     <option value="fr">🇫🇷 Français</option>
                     <option value="en">🇬🇧 English</option>
@@ -336,96 +363,123 @@
         </div>
     </header>
 
+    <!-- Main PDF Pages Document Container -->
     <main class="pdf-document-container">
 
         <!-- PAGE 1: COVER PAGE -->
-        <article class="pdf-page cover-page" id="page-1">
-            <div class="cover-top-banner">
-                BONUS 1 :
+        <article class="pdf-page cover-page" id="cover">
+            <div>
+                <div class="cover-badge">BONUS 1 :</div>
+                <h1 class="cover-title">10 phrases pour<br>désamorcer un conflit<br>immédiatement</h1>
+                <div class="cover-author">Par Lina Rela</div>
             </div>
 
-            <div class="cover-content">
-                <h1 class="cover-main-title">
-                    10 phrases pour<br>désamorcer un conflit<br>immédiatement
-                </h1>
-
-                <div class="cover-illustration">
-                    <!-- Heart Silhouette Vector -->
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                </div>
+            <div class="cover-illustration">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 180C100 180 30 130 30 75C30 45 52 25 80 25C95 25 100 35 100 35C100 35 105 25 120 25C148 25 170 45 170 75C170 130 100 180 100 180Z" fill="url(#violet-grad)" opacity="0.9"/>
+                    <path d="M85 85C85 75 92 68 100 68C108 68 115 75 115 85C115 95 100 110 100 110C100 110 85 95 85 85Z" fill="#ffffff" opacity="0.95"/>
+                    <circle cx="65" cy="60" r="6" fill="#c084fc"/>
+                    <circle cx="135" cy="60" r="6" fill="#c084fc"/>
+                    <circle cx="45" cy="95" r="4" fill="#a855f7"/>
+                    <circle cx="155" cy="95" r="4" fill="#a855f7"/>
+                    <defs>
+                        <linearGradient id="violet-grad" x1="30" y1="25" x2="170" y2="180" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#c084fc"/>
+                            <stop offset="1" stop-color="#7e22ce"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
-
-            <!-- Curved wave graphic -->
-            <svg class="cover-wave-svg" viewBox="0 0 500 150" preserveAspectRatio="none">
-                <path d="M0,120 C150,160 350,40 500,100 L500,150 L0,150 Z" fill="#290825" stroke="#ffffff" stroke-width="3"></path>
-            </svg>
         </article>
 
-        <!-- PAGE 2: CONTENT PAGE 1 -->
+        <!-- PAGE 2: PHRASES 1 A 7 -->
         <article class="pdf-page" id="page-2">
-            <div>
-                <div class="pdf-header">Lina Rela | Bonus 1 : 10 Phrases Pour Désamorcer un Conflit</div>
-                
-                <p class="page-intro-text">
+            <header class="pdf-header">
+                Lina Rela | Bonus 1 : 10 Phrases pour Désamorcer un Conflit
+            </header>
+            <div class="pdf-body">
+                <div class="intro-box">
                     Un ensemble de phrases simples, prêtes à utiliser dans les moments tendus pour calmer une discussion, éviter l'escalade et reprendre le contrôle émotionnel. Tu sauras quoi dire au bon moment pour apaiser ta partenaire, réduire la pression et ramener la conversation vers quelque chose de plus constructif.
-                </p>
+                </div>
 
-                <h2 class="section-heading">Les 10 phrases à utiliser :</h2>
+                <h2 class="section-title">Les 10 phrases à utiliser :</h2>
 
                 <div class="phrase-list">
                     <div class="phrase-card">
-                        <span class="phrase-num">1.</span> « Attends, je veux vraiment comprendre ce que tu ressens. »
+                        <div class="phrase-number">1</div>
+                        <div class="phrase-text">« Attends, je veux vraiment comprendre ce que tu ressens. »</div>
                     </div>
+
                     <div class="phrase-card">
-                        <span class="phrase-num">2.</span> « Je vois que c'est important pour toi, parlons-en calmement. »
+                        <div class="phrase-number">2</div>
+                        <div class="phrase-text">« Je vois que c'est important pour toi, parlons-en calmement. »</div>
                     </div>
+
                     <div class="phrase-card">
-                        <span class="phrase-num">3.</span> « Ce n'est pas contre toi, je veux qu'on trouve une solution. »
+                        <div class="phrase-number">3</div>
+                        <div class="phrase-text">« Ce n'est pas contre toi, je veux qu'on trouve une solution. »</div>
                     </div>
+
                     <div class="phrase-card">
-                        <span class="phrase-num">4.</span> « Tu as raison sur ce point, je ne l'avais pas vu comme ça. »
+                        <div class="phrase-number">4</div>
+                        <div class="phrase-text">« Tu as raison sur ce point, je ne l'avais pas vu comme ça. »</div>
                     </div>
+
                     <div class="phrase-card">
-                        <span class="phrase-num">5.</span> « On peut faire une pause 2 minutes pour éviter de dire des choses qu'on regrette ? »
+                        <div class="phrase-number">5</div>
+                        <div class="phrase-text">« On peut faire une pause 2 minutes pour éviter de dire des choses qu'on regrette ? »</div>
                     </div>
+
                     <div class="phrase-card">
-                        <span class="phrase-num">6.</span> « Je suis avec toi, pas contre toi. »
+                        <div class="phrase-number">6</div>
+                        <div class="phrase-text">« Je suis avec toi, pas contre toi. »</div>
                     </div>
+
                     <div class="phrase-card">
-                        <span class="phrase-num">7.</span> « Dis-moi ce que tu attends de moi exactement. »
+                        <div class="phrase-number">7</div>
+                        <div class="phrase-text">« Dis-moi ce que tu attends de moi exactement. »</div>
                     </div>
                 </div>
             </div>
-
             <footer class="pdf-footer">2</footer>
         </article>
 
-        <!-- PAGE 3: CONTENT PAGE 2 -->
+        <!-- PAGE 3: PHRASES 8 A 10 -->
         <article class="pdf-page" id="page-3">
-            <div>
-                <div class="pdf-header">Lina Rela | Bonus 1 : 10 Phrases Pour Désamorcer un Conflit</div>
+            <header class="pdf-header">
+                Lina Rela | Bonus 1 : 10 Phrases pour Désamorcer un Conflit
+            </header>
+            <div class="pdf-body">
+                <div class="phrase-list" style="margin-top: 20px;">
+                    <div class="phrase-card">
+                        <div class="phrase-number">8</div>
+                        <div class="phrase-text">« Je préfère qu'on règle ça proprement plutôt que de s'énerver. »</div>
+                    </div>
 
-                <div class="phrase-list" style="margin-top: 30px;">
                     <div class="phrase-card">
-                        <span class="phrase-num">8.</span> « Je préfère qu'on règle ça proprement plutôt que de s'énerver. »
+                        <div class="phrase-number">9</div>
+                        <div class="phrase-text">« Je tiens à toi, donc je veux qu'on fasse ça bien. »</div>
                     </div>
+
                     <div class="phrase-card">
-                        <span class="phrase-num">9.</span> « Je tiens à toi, donc je veux qu'on fasse ça bien. »
-                    </div>
-                    <div class="phrase-card">
-                        <span class="phrase-num">10.</span> « On est dans la même équipe, trouvons une solution ensemble. »
+                        <div class="phrase-number">10</div>
+                        <div class="phrase-text">« On est dans la même équipe, trouvons une solution ensemble. »</div>
                     </div>
                 </div>
-            </div>
 
+                <div style="margin-top: 60px; background: linear-gradient(135deg, #3b0764, #1e0538); color: #ffffff; padding: 35px 30px; border-radius: 12px; text-align: center; border: 1.5px solid #a855f7;">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 12px; color: #c084fc;">Conseil Clé de Lina Rela</h3>
+                    <p style="font-size: 1.05rem; line-height: 1.7; font-style: italic; color: #e9d5ff;">
+                        "La différence entre une dispute qui détruit et une discussion qui rapproche réside dans le ton et le timing. Prononce ces phrases avec calme, sans ironie, en regardant ta partenaire dans les yeux."
+                    </p>
+                </div>
+            </div>
             <footer class="pdf-footer">3</footer>
         </article>
 
     </main>
 
-    <!-- Google Translate Script -->
+    <!-- Google Translate & Language Switcher Logic -->
     <script type="text/javascript">
         function setTranslateCookie(langCode) {
             var domain = window.location.hostname;
