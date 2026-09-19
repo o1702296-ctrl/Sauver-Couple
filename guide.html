@@ -1294,15 +1294,17 @@
         </div>
     </div>
 
-    <!-- Voice Reader Script Engine -->
+    
+    <!-- Robust Multi-Language Voice Reader Engine with Keep-Alive & Sentence Chunking -->
     <script type="text/javascript">
         var VoiceReader = {
-            elements: [],
+            queue: [],
             currentIndex: 0,
             isPlaying: false,
             isPaused: false,
             playbackRate: 1.0,
             utterance: null,
+            keepAliveInterval: null,
 
             LANG_MAP: {
                 'fr': 'fr-FR',
@@ -1323,18 +1325,60 @@
                 return this.LANG_MAP[savedLang] || 'fr-FR';
             },
 
+            splitTextIntoSentences: function(text) {
+                if (!text) return [];
+                var parts = text.split(/(?<=[.!?])\s+/);
+                var chunks = [];
+                parts.forEach(function(p) {
+                    var trimmed = p.trim();
+                    if (trimmed.length > 0) {
+                        if (trimmed.length > 200) {
+                            var clauses = trimmed.split(/(?<=[,;:])\s+/);
+                            clauses.forEach(function(c) {
+                                var sub = c.trim();
+                                if (sub.length > 0) chunks.push(sub);
+                            });
+                        } else {
+                            chunks.push(trimmed);
+                        }
+                    }
+                });
+                return chunks.length > 0 ? chunks : [text];
+            },
+
             collectReadableElements: function() {
                 var container = document.querySelector('.pdf-document-container');
                 if (!container) return [];
-                var candidates = container.querySelectorAll('h1, h2, h3, p.para, .pdf-quote-text, .pdf-sister-box p, .pdf-metaphor-body, .cover-tagline, .phrase-text, .error-title, .error-row span:not(.badge-err):not(.badge-sol)');
-                var items = [];
+
+                var selectors = [
+                    '.cover-top-header', '.cover-main-title', '.cover-subtitle', '.cover-tagline', '.cover-author-name', '.cover-bottom-bar',
+                    'h1', 'h2', 'h3', 'p',
+                    '.pdf-quote-text', '.pdf-sister-header',
+                    '.pdf-metaphor-header', '.pdf-metaphor-body',
+                    '.toc-chapter-title', '.toc-chapter-sub',
+                    '.phrase-text', '.error-title', '.error-row span'
+                ].join(', ');
+
+                var candidates = container.querySelectorAll(selectors);
+                var queueItems = [];
+                var self = this;
+
                 candidates.forEach(function(el) {
-                    var text = el.innerText.trim();
-                    if (text && text.length > 1) {
-                        items.push({ element: el, text: text });
+                    if (el.offsetWidth === 0 && el.offsetHeight === 0) return;
+                    
+                    var text = el.innerText ? el.innerText.trim() : '';
+                    if (text.length > 1) {
+                        var sentences = self.splitTextIntoSentences(text);
+                        sentences.forEach(function(sentence) {
+                            queueItems.push({
+                                element: el,
+                                text: sentence
+                            });
+                        });
                     }
                 });
-                return items;
+
+                return queueItems;
             },
 
             toggle: function() {
@@ -1355,28 +1399,34 @@
                     return;
                 }
                 window.speechSynthesis.cancel();
-                this.elements = this.collectReadableElements();
-                if (this.elements.length === 0) return;
+                this.queue = this.collectReadableElements();
+                if (this.queue.length === 0) {
+                    alert('Aucun texte à lire trouvé.');
+                    return;
+                }
 
                 this.currentIndex = 0;
                 this.isPlaying = true;
                 this.isPaused = false;
 
+                this.startKeepAlive();
                 this.updateUI(true);
                 this.readCurrent();
             },
 
             readCurrent: function() {
-                if (!this.isPlaying || this.currentIndex >= this.elements.length) {
+                if (!this.isPlaying || this.currentIndex >= this.queue.length) {
                     this.stop();
                     return;
                 }
 
                 this.clearHighlights();
 
-                var item = this.elements[this.currentIndex];
-                item.element.classList.add('voice-active-highlight');
-                item.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                var item = this.queue[this.currentIndex];
+                if (item.element) {
+                    item.element.classList.add('voice-active-highlight');
+                    item.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
 
                 var self = this;
                 this.utterance = new SpeechSynthesisUtterance(item.text);
@@ -1388,15 +1438,17 @@
                         self.currentIndex++;
                         setTimeout(function() {
                             self.readCurrent();
-                        }, 180);
+                        }, 150);
                     }
                 };
 
                 this.utterance.onerror = function(e) {
-                    console.error('Speech error:', e);
+                    console.warn('Speech error, advancing to next sentence:', e);
                     if (self.isPlaying) {
                         self.currentIndex++;
-                        self.readCurrent();
+                        setTimeout(function() {
+                            self.readCurrent();
+                        }, 150);
                     }
                 };
 
@@ -1405,6 +1457,23 @@
 
                 this.updateStatusText();
                 window.speechSynthesis.speak(this.utterance);
+            },
+
+            startKeepAlive: function() {
+                this.stopKeepAlive();
+                this.keepAliveInterval = setInterval(function() {
+                    if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+                        window.speechSynthesis.pause();
+                        window.speechSynthesis.resume();
+                    }
+                }, 8000);
+            },
+
+            stopKeepAlive: function() {
+                if (this.keepAliveInterval) {
+                    clearInterval(this.keepAliveInterval);
+                    this.keepAliveInterval = null;
+                }
             },
 
             pause: function() {
@@ -1426,6 +1495,7 @@
             },
 
             stop: function() {
+                this.stopKeepAlive();
                 window.speechSynthesis.cancel();
                 this.isPlaying = false;
                 this.isPaused = false;
@@ -1449,9 +1519,9 @@
 
             updateStatusText: function() {
                 var statusElem = document.getElementById('voice-status-text');
-                if (statusElem && this.elements.length > 0) {
-                    var pct = Math.round(((this.currentIndex + 1) / this.elements.length) * 100);
-                    statusElem.innerText = 'Élément ' + (this.currentIndex + 1) + ' / ' + this.elements.length + ' (' + pct + '%)';
+                if (statusElem && this.queue.length > 0) {
+                    var pct = Math.round(((this.currentIndex + 1) / this.queue.length) * 100);
+                    statusElem.innerText = 'Lecture : ' + (this.currentIndex + 1) + ' / ' + this.queue.length + ' (' + pct + '%)';
                 }
             },
 
@@ -1489,6 +1559,7 @@
             VoiceReader.stop();
         });
     </script>
+
 
 </body>
 </html>
