@@ -439,6 +439,48 @@
             .pdf-toolbar { height: auto; padding: 10px; justify-content: center; }
             .chapter-select { max-width: 100%; }
         }
+    
+        /* Arabic RTL Layout Support */
+        html[dir="rtl"] body {
+            direction: rtl;
+            text-align: right;
+        }
+
+        html[dir="rtl"] .pdf-header {
+            justify-content: flex-start;
+        }
+
+        html[dir="rtl"] .pdf-title-info {
+            flex-direction: row-reverse;
+        }
+
+        html[dir="rtl"] .toc-item:hover {
+            padding-left: 0;
+            padding-right: 10px;
+        }
+
+        html[dir="rtl"] .intro-box {
+            border-left: none;
+            border-right: 4px solid #7e22ce;
+        }
+
+        html[dir="rtl"] .phrase-card, html[dir="rtl"] .error-card {
+            flex-direction: row-reverse;
+        }
+
+        html[dir="rtl"] .error-details {
+            padding-left: 0;
+            padding-right: 48px;
+        }
+
+        html[dir="rtl"] p.para {
+            text-align: right;
+        }
+
+        html[dir="rtl"] .cover-badges-grid {
+            direction: rtl;
+        }
+
     </style>
 </head>
 <body>
@@ -1094,6 +1136,27 @@
             }
         }
 
+        
+        function updateRTLState() {
+            var savedLang = localStorage.getItem('selected_landing_lang');
+            var match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
+            var activeLang = savedLang || 'fr';
+            if (match && match[1]) {
+                var parts = match[1].split('/');
+                if (parts.length >= 3 && parts[2]) {
+                    activeLang = parts[2];
+                }
+            }
+            if (activeLang === 'ar') {
+                document.documentElement.setAttribute('dir', 'rtl');
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', updateRTLState);
+        window.addEventListener('load', updateRTLState);
+
         document.addEventListener('DOMContentLoaded', syncLanguageDropdownUI);
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -1261,6 +1324,48 @@
             transition: all 0.3s ease;
             box-shadow: 0 0 25px rgba(168, 85, 247, 0.4) !important;
         }
+    
+        /* Arabic RTL Layout Support */
+        html[dir="rtl"] body {
+            direction: rtl;
+            text-align: right;
+        }
+
+        html[dir="rtl"] .pdf-header {
+            justify-content: flex-start;
+        }
+
+        html[dir="rtl"] .pdf-title-info {
+            flex-direction: row-reverse;
+        }
+
+        html[dir="rtl"] .toc-item:hover {
+            padding-left: 0;
+            padding-right: 10px;
+        }
+
+        html[dir="rtl"] .intro-box {
+            border-left: none;
+            border-right: 4px solid #7e22ce;
+        }
+
+        html[dir="rtl"] .phrase-card, html[dir="rtl"] .error-card {
+            flex-direction: row-reverse;
+        }
+
+        html[dir="rtl"] .error-details {
+            padding-left: 0;
+            padding-right: 48px;
+        }
+
+        html[dir="rtl"] p.para {
+            text-align: right;
+        }
+
+        html[dir="rtl"] .cover-badges-grid {
+            direction: rtl;
+        }
+
     </style>
 
     <!-- Floating Lip-Sync Audio Player Widget -->
@@ -1327,7 +1432,7 @@
 
             splitTextIntoSentences: function(text) {
                 if (!text) return [];
-                var parts = text.split(/(?<=[.!?])\s+/);
+                var parts = text.split(/(?<=[.!?؟،])\s+/);
                 var chunks = [];
                 parts.forEach(function(p) {
                     var trimmed = p.trim();
