@@ -3,2897 +3,1043 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAUVER TON COUPLE SANS PERDRE TA DIGNITÉ — Dora Elysiane</title>
-    <meta name="description" content="Guide premium de couple pour l'homme moderne par Dora Elysiane. 10 chapitres, plan 30 jours, exercices pratiques et outils de communication pour transformer votre foyer.">
+    <title>SAUVER TON COUPLE SANS PERDRE TA DIGNITÉ — Document PDF — Lina Rela</title>
+    <meta name="description" content="Guide premium de couple pour l'homme moderne par Lina Rela. 10 chapitres complets, plan 30 jours, exercices pratiques et outils de communication pour apaiser votre foyer.">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     
     <style>
         :root {
-            --purple-primary: #6b21a8;
-            --purple-dark: #3b0764;
-            --purple-light: #9333ea;
-            --purple-deep: #1e0236;
-            --purple-glow: #c084fc;
-            --lavender-light: #f3e8ff;
-            --pink-accent: #e879f9;
-            --purple-gradient: linear-gradient(135deg, #9333ea 0%, #6b21a8 50%, #3b0764 100%);
-            --purple-hover: linear-gradient(135deg, #581c87 0%, #2e1065 100%);
-            --dark-bg: #0f0318;
-            --dark-surface: #1a0528;
-            --dark-card: #26083b;
-            --text-dark: #0f172a;
-            --text-muted: #475569;
-            --border-radius: 16px;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --shadow-sm: 0 4px 6px -1px rgba(0,0,0,0.05);
-            --shadow-md: 0 10px 30px -5px rgba(107, 33, 168, 0.25);
-            --shadow-lg: 0 20px 40px -15px rgba(107, 33, 168, 0.45);
-            --purple-shadow: 0 0 35px rgba(147, 51, 234, 0.4);
+            --pdf-bg: #2b0b1c; /* Background of dark rose viewer */
+            --page-bg: #ffffff; /* Clean page background */
+            --text-color: #2b2b2b; /* Text color */
+            --text-heading: #831843; /* Deep magenta heading */
+            --accent-pink: #ec4899; /* Vibrant pink */
+            --accent-pink-dark: #be185d; /* Dark vibrant rose */
+            --accent-pink-light: #fbcfe8; /* Soft pink tint */
+            --accent-rose-gold: #f472b6; /* Rose gold / light pink */
+            --border-color: #fbcfe8; /* Pink border */
+            --box-gold-bg: #fff0f5; /* Soft rose quote box */
+            --box-sister-bg: #fce7f3; /* Pink sister advice box */
+            --box-metaphor-bg: #fff1f2; /* Rose water metaphor box */
+            --font-main: 'Inter', sans-serif;
+            --font-heading: 'Outfit', sans-serif;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         html {
+            background-color: var(--pdf-bg);
+            font-family: var(--font-main);
+            color: var(--text-color);
+            line-height: 1.6;
             scroll-behavior: smooth;
-            font-family: 'Inter', sans-serif;
-            color: var(--text-dark);
-            background-color: #ffffff;
-            line-height: 1.6;
         }
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 800;
-            line-height: 1.25;
-        }
-
-        .container {
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .text-center { text-align: center; }
-        .text-pink { color: var(--pink-accent); }
-        .text-purple { color: var(--purple-light); }
-        .text-lavender { color: var(--lavender-light); }
-        .price-no-wrap, .btn-price-tag { white-space: nowrap !important; display: inline-block; }
-
-        /* Top Bar Urgency (Pure Violet) */
-        .announcement-bar {
-            background: var(--purple-gradient);
-            border-bottom: 2px solid var(--purple-glow);
-            color: #ffffff;
-            text-align: center;
-            padding: 12px 15px;
-            font-size: 0.95rem;
-            font-weight: 700;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 12px rgba(59, 7, 100, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .announcement-bar .timer-badge {
-            background: rgba(0,0,0,0.4);
-            padding: 4px 14px;
-            border-radius: 20px;
-            border: 1px solid var(--purple-glow);
-            font-family: monospace;
-            font-size: 1.05rem;
-            color: #ffffff;
-            font-weight: 800;
-        }
-
-        /* Responsive Buttons with Fluid Typography */
-        .btn-eloquence {
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px 28px;
-            border-radius: 12px;
-            font-family: 'Outfit', sans-serif;
-            font-size: clamp(1.05rem, 2.1vw, 1.35rem);
-            font-weight: 900;
-            text-decoration: none;
-            cursor: pointer;
-            transition: var(--transition);
-            border: 2px solid var(--purple-glow);
-            width: 100%;
-            max-width: 820px;
-            text-align: center;
-            background: var(--purple-gradient);
-            color: #ffffff;
-            box-shadow: 0 15px 35px rgba(107, 33, 168, 0.55);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            line-height: 1.35;
-        }
-
-        .btn-eloquence:hover {
-            transform: translateY(-3px) scale(1.015);
-            background: var(--purple-hover);
-            box-shadow: 0 20px 45px rgba(232, 121, 249, 0.4);
-        }
-
-        .btn-subtext {
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--lavender-light);
-            margin-top: 5px;
-            text-transform: none;
-            letter-spacing: 0;
-            line-height: 1.4;
-        }
-
-        /* Hero Section (Structure Éloquence 2.0) */
-        .hero {
-            padding: 70px 0 90px;
-            background: linear-gradient(180deg, #1a0528 0%, #0a0112 100%);
-            color: #ffffff;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: rgba(147, 51, 234, 0.25);
-            border: 1px solid var(--purple-glow);
-            color: var(--lavender-light);
-            padding: 8px 24px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 24px;
-        }
-
-        .hero-title {
-            font-size: 2.7rem;
-            line-height: 1.25;
-            margin-bottom: 24px;
-            color: #ffffff;
-            font-weight: 900;
-            text-transform: uppercase;
-        }
-
-        .hero-title span {
-            color: var(--pink-accent);
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: #cbd5e1;
-            max-width: 880px;
-            margin: 0 auto 36px;
-            line-height: 1.6;
-        }
-
-        .hero-target-box {
-            background: rgba(26, 5, 40, 0.85);
-            border: 1px solid var(--purple-glow);
-            border-radius: 12px;
-            padding: 20px 28px;
-            max-width: 850px;
-            margin: 30px auto;
-            color: var(--lavender-light);
-            font-size: 1.05rem;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            line-height: 1.6;
-        }
-
-        /* HERO GRAND PANORAMIC BUNDLE STAGE */
-        .grand-bundle-stage {
-            position: relative;
-            max-width: 1180px;
-            margin: 40px auto 20px;
-            padding: 60px 10px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            perspective: 1200px;
-        }
-
-        .grand-halo-circle {
-            position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 540px;
-            height: 390px;
-            background: radial-gradient(ellipse at center, rgba(147, 51, 234, 0.8) 0%, rgba(107, 33, 168, 0.45) 60%, transparent 85%);
-            border-radius: 50%;
-            filter: blur(40px);
-            z-index: 1;
-        }
-
-        .grand-box-cascade {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            height: 280px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            margin-bottom: -110px;
-        }
-
-        .elo-box {
-            position: absolute;
-            bottom: 0;
-            transform-style: preserve-3d;
-            transition: var(--transition);
-        }
-
-        .elo-box:hover {
-            transform: translateY(-8px) scale(1.03);
-            z-index: 15 !important;
-        }
-
-        .box-pos-1 { left: 2%; width: 125px; height: 170px; z-index: 6; transform: perspective(800px) rotateY(-18deg) rotateX(4deg); }
-        .box-pos-2 { left: 14%; width: 135px; height: 185px; z-index: 5; transform: perspective(800px) rotateY(-18deg) rotateX(4deg); }
-        .box-pos-3 { left: 26%; width: 145px; height: 200px; z-index: 4; transform: perspective(800px) rotateY(-18deg) rotateX(4deg); }
-        .box-pos-center { left: 50%; transform: translateX(-50%) perspective(800px) rotateY(0deg) rotateX(4deg); width: 170px; height: 235px; z-index: 3; }
-        .box-pos-5 { right: 26%; width: 145px; height: 200px; z-index: 4; transform: perspective(800px) rotateY(18deg) rotateX(4deg); }
-        .box-pos-6 { right: 14%; width: 135px; height: 185px; z-index: 5; transform: perspective(800px) rotateY(18deg) rotateX(4deg); }
-        .box-pos-7 { right: 2%; width: 125px; height: 170px; z-index: 6; transform: perspective(800px) rotateY(18deg) rotateX(4deg); }
-
-        .elo-box-top {
-            position: absolute;
-            top: -20px;
-            left: 0;
-            width: 100%;
-            height: 20px;
-            background: #6b21a8;
-            border: 1px solid var(--purple-glow);
-            transform-origin: bottom center;
-            transform: rotateX(90deg);
-        }
-
-        .elo-box-spine {
-            position: absolute;
-            top: 0;
-            left: -20px;
-            width: 20px;
-            height: 100%;
-            background: linear-gradient(180deg, #3b0764 0%, #1a032e 100%);
-            border: 1px solid var(--purple-glow);
-            border-right: none;
-            transform-origin: right center;
-            transform: rotateY(-90deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .elo-box-spine span {
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            color: var(--pink-accent);
-            font-size: 0.6rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            font-family: 'Outfit', sans-serif;
-            white-space: nowrap;
-        }
-
-        .elo-box-front {
-            width: 100%;
-            height: 100%;
-            border: 2px solid var(--purple-glow);
-            border-radius: 4px;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            background: #ffffff;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.85);
-            position: relative;
-        }
-
-        .elo-top-dark {
-            background: linear-gradient(135deg, #3b0764 0%, #1a032e 100%);
-            padding: 8px 4px;
-            text-align: center;
-            color: #ffffff;
-            border-bottom: 2px solid var(--purple-glow);
-        }
-
-        .elo-top-dark h4 {
-            font-size: 0.72rem;
-            font-weight: 900;
-            letter-spacing: 0.5px;
-            line-height: 1.1;
-            color: #ffffff;
-        }
-
-        .elo-top-dark h3 {
-            font-size: 0.85rem;
-            font-weight: 900;
-            letter-spacing: 0.5px;
-            line-height: 1.1;
-            color: #ffffff;
-        }
-
-        .elo-top-dark p {
-            font-size: 0.55rem;
-            color: var(--pink-accent);
-            font-weight: 700;
-            margin-top: 2px;
-            text-transform: uppercase;
-        }
-
-        .elo-mid-light {
-            flex: 1;
-            background: linear-gradient(180deg, #fcf9ff 0%, #f3e8ff 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8px;
-            position: relative;
-        }
-
-        .elo-circle-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: #1a032e;
-            border: 2px solid var(--purple-glow);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--pink-accent);
-            font-size: 1.2rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-
-        .elo-circle-icon.large-icon {
-            width: 60px;
-            height: 60px;
-            font-size: 1.6rem;
-        }
-
-        .elo-seal-badge {
-            position: absolute;
-            top: 6px;
-            right: 6px;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: var(--purple-gradient);
-            border: 1px solid var(--purple-glow);
-            color: #ffffff;
-            font-size: 0.6rem;
-            font-weight: 900;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-        }
-
-        .elo-pill-footer {
-            background: linear-gradient(135deg, #6b21a8 0%, #3b0764 100%);
-            color: #ffffff;
-            padding: 5px 6px;
-            margin: 5px;
-            border-radius: 20px;
-            text-align: center;
-            font-size: 0.6rem;
-            font-weight: 800;
-            font-family: 'Outfit', sans-serif;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            border: 1px solid var(--purple-glow);
-        }
-
-        /* Dual Laptops Stage */
-        .grand-laptops-v-stage {
-            position: relative;
-            z-index: 10;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            width: 100%;
-        }
-
-        .grand-lap {
-            position: relative;
-            transform-style: preserve-3d;
-            transition: var(--transition);
-        }
-
-        .lap-left {
-            width: 480px;
-            margin-right: -40px;
-            transform: perspective(1000px) rotateY(32deg) rotateX(4deg);
-            filter: drop-shadow(-15px 25px 35px rgba(0,0,0,0.95));
-        }
-
-        .lap-left:hover {
-            transform: perspective(1000px) rotateY(18deg) scale(1.03);
-            z-index: 20;
-        }
-
-        .lap-right {
-            width: 480px;
-            margin-left: -40px;
-            transform: perspective(1000px) rotateY(-32deg) rotateX(4deg);
-            filter: drop-shadow(15px 25px 35px rgba(0,0,0,0.95));
-        }
-
-        .lap-right:hover {
-            transform: perspective(1000px) rotateY(-18deg) scale(1.03);
-            z-index: 20;
-        }
-
-        .lap-bezel {
-            background: #0f172a;
-            border-radius: 12px 12px 0 0;
-            padding: 10px;
-            border: 3px solid #64748b;
-            border-bottom: none;
-        }
-
-        .lap-screen {
-            background: linear-gradient(180deg, #1a0528 0%, #0d0214 100%);
-            border-radius: 6px;
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-            text-align: center;
-            border: 2px solid var(--purple-primary);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .lap-screen-title {
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: #ffffff;
-            font-family: 'Outfit', sans-serif;
-            letter-spacing: 1px;
-            margin-bottom: 2px;
-        }
-
-        .lap-screen-sub {
-            font-size: 0.85rem;
-            color: var(--pink-accent);
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 4px;
-        }
-
-        .lap-screen i {
-            font-size: 2.8rem;
-            color: var(--purple-glow);
-            margin: 10px 0;
-        }
-
-        .lap-screen-tag {
-            background: var(--purple-gradient);
-            color: #ffffff;
-            border: 1px solid var(--purple-glow);
-            font-size: 0.8rem;
-            font-weight: 800;
-            padding: 4px 16px;
-            border-radius: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-            margin-top: 4px;
-        }
-
-        .lap-keyboard {
-            height: 16px;
-            background: linear-gradient(180deg, #cbd5e1 0%, #64748b 100%);
-            border-radius: 0 0 16px 16px;
-            position: relative;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.8);
-        }
-
-        .lap-notch {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px;
-            height: 4px;
-            background: #334155;
-            border-radius: 0 0 4px 4px;
-        }
-
-        /* MODULE MOCKUP STAGE STYLING */
-        .eloquence-mockup-stage {
-            position: relative;
-            width: 320px;
-            height: 270px;
-            margin: 0 auto;
-            perspective: 1000px;
-        }
-
-        .eloquence-circle-bg {
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 230px;
-            height: 230px;
-            background: radial-gradient(circle, #9333ea 0%, #6b21a8 60%, transparent 100%);
-            border-radius: 50%;
-            filter: blur(8px);
-            z-index: 1;
-            opacity: 0.85;
-        }
-
-        .eloquence-box-back {
-            position: absolute;
-            top: 15px;
-            right: 40px;
-            width: 150px;
-            height: 200px;
-            z-index: 2;
-            transform-style: preserve-3d;
-            transform: rotateY(-18deg) rotateX(4deg);
-            box-shadow: -12px 18px 30px rgba(0,0,0,0.8);
-            transition: var(--transition);
-        }
-
-        .eloquence-box-back:hover {
-            transform: rotateY(-10deg) translateY(-5px);
-        }
-
-        .eloquence-box-front {
-            position: absolute;
-            bottom: 20px;
-            right: 15px;
-            width: 135px;
-            height: 175px;
-            z-index: 4;
-            transform-style: preserve-3d;
-            transform: rotateY(-18deg) rotateX(4deg);
-            box-shadow: -10px 15px 25px rgba(0,0,0,0.85);
-            transition: var(--transition);
-        }
-
-        .eloquence-box-front:hover {
-            transform: rotateY(-8deg) translateY(-6px);
-        }
-
-        .box3d-top-lid {
-            position: absolute;
-            top: -24px;
-            left: 0;
-            width: 100%;
-            height: 24px;
-            background: #6b21a8;
-            border: 1px solid var(--purple-glow);
-            transform-origin: bottom center;
-            transform: rotateX(90deg);
-        }
-
-        .box3d-spine-left {
-            position: absolute;
-            top: 0;
-            left: -24px;
-            width: 24px;
-            height: 100%;
-            background: linear-gradient(180deg, #3b0764 0%, #1a032e 100%);
-            border: 1px solid var(--purple-glow);
-            border-right: none;
-            transform-origin: right center;
-            transform: rotateY(-90deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .box3d-spine-left span {
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            color: var(--pink-accent);
-            font-size: 0.62rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            font-family: 'Outfit', sans-serif;
-            white-space: nowrap;
-        }
-
-        .box3d-front-panel {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 2px solid var(--purple-glow);
-            border-radius: 4px;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            background: #ffffff;
-        }
-
-        .box-top-dark {
-            background: linear-gradient(135deg, #3b0764 0%, #1a032e 100%);
-            padding: 8px;
-            text-align: center;
-            color: #ffffff;
-            border-bottom: 2px solid var(--purple-glow);
-        }
-
-        .box-top-dark h4 {
-            font-size: 0.78rem;
-            font-weight: 900;
-            letter-spacing: 0.5px;
-            line-height: 1.1;
-            color: #ffffff;
-        }
-
-        .box-top-dark p {
-            font-size: 0.6rem;
-            color: var(--pink-accent);
-            font-weight: 700;
-            margin-top: 2px;
-            text-transform: uppercase;
-        }
-
-        .box-mid-light {
-            flex: 1;
-            background: linear-gradient(180deg, #fcf9ff 0%, #f3e8ff 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-        }
-
-        .box-circle-emblem {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            background: #1a032e;
-            border: 2px solid var(--purple-glow);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--pink-accent);
-            font-size: 1.4rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-
-        .box-bottom-pill {
-            background: linear-gradient(135deg, #6b21a8 0%, #3b0764 100%);
-            color: #ffffff;
-            padding: 6px 8px;
-            margin: 6px;
-            border-radius: 20px;
-            text-align: center;
-            font-size: 0.65rem;
-            font-weight: 800;
-            font-family: 'Outfit', sans-serif;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            border: 1px solid var(--purple-glow);
-        }
-
-        .eloquence-laptop-front {
-            position: absolute;
-            bottom: 0;
-            left: 10px;
-            width: 220px;
-            z-index: 6;
-            transform-style: preserve-3d;
-            transform: rotateY(16deg) rotateX(2deg);
-            filter: drop-shadow(-8px 12px 20px rgba(0,0,0,0.9));
-            transition: var(--transition);
-        }
-
-        .eloquence-laptop-front:hover {
-            transform: rotateY(8deg) translateY(-6px);
-        }
-
-        .laptop-screen-bezel {
-            background: #0f172a;
-            border-radius: 8px 8px 0 0;
-            padding: 6px;
-            border: 2px solid #475569;
-            border-bottom: none;
-        }
-
-        .laptop-display-content {
-            background: linear-gradient(180deg, #1a0528 0%, #0d0214 100%);
-            border-radius: 4px;
-            height: 125px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 8px;
-            text-align: center;
-            border: 1px solid var(--purple-primary);
-        }
-
-        .lap-title {
-            font-size: 0.72rem;
-            font-weight: 900;
-            color: #ffffff;
-            letter-spacing: 0.5px;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .lap-sub {
-            font-size: 0.55rem;
-            color: var(--pink-accent);
-            font-weight: 700;
-            margin-top: 1px;
-        }
-
-        .lap-icon {
-            font-size: 1.4rem;
-            color: var(--purple-glow);
-            margin: 4px 0;
-        }
-
-        .lap-module-tag {
-            background: var(--purple-gradient);
-            color: #ffffff;
-            font-size: 0.55rem;
-            font-weight: 800;
-            padding: 2px 8px;
-            border-radius: 10px;
-            border: 1px solid var(--purple-glow);
-        }
-
-        .lap-detail {
-            font-size: 0.5rem;
-            color: #cbd5e1;
-            margin-top: 2px;
-        }
-
-        .laptop-keyboard-deck {
-            height: 10px;
-            background: linear-gradient(180deg, #cbd5e1 0%, #64748b 100%);
-            border-radius: 0 0 10px 10px;
-            position: relative;
-        }
-
-        .laptop-notch {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 25px;
-            height: 3px;
-            background: #334155;
-            border-radius: 0 0 3px 3px;
-        }
-
-        /* Section Styling */
-        section {
-            padding: 85px 0;
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 850px;
-            margin: 0 auto 55px;
-        }
-
-        .section-tag {
-            color: var(--purple-light);
-            font-weight: 800;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 12px;
-            display: block;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            color: var(--text-dark);
-            margin-bottom: 18px;
-            text-transform: uppercase;
-        }
-
-        .section-description {
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        /* "Imaginez Pouvoir" Grid (Style Éloquence) */
-        .imagine-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
-        }
-
-        .imagine-card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: var(--border-radius);
-            padding: 30px;
-            box-shadow: var(--shadow-sm);
-            display: flex;
-            align-items: flex-start;
-            gap: 18px;
-            transition: var(--transition);
-        }
-
-        .imagine-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--purple-glow);
-            box-shadow: var(--shadow-md);
-        }
-
-        .imagine-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            background: var(--purple-gradient);
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            flex-shrink: 0;
-            border: 1px solid var(--purple-glow);
-        }
-
-        .imagine-text {
-            font-size: 1.05rem;
-            color: var(--text-dark);
-            font-weight: 600;
-            line-height: 1.5;
-        }
-
-        /* Chapters Section (Style Éloquence 6 Modules) */
-        .chapters-section {
-            background: linear-gradient(180deg, #0a0112 0%, #1a0528 100%);
-            color: #ffffff;
-        }
-
-        .chapters-section .section-title {
-            color: #ffffff;
-        }
-
-        .chapters-section .section-description {
-            color: #cbd5e1;
-        }
-
-        .chapter-card {
-            background: var(--dark-card);
-            border: 1px solid rgba(192, 132, 252, 0.25);
-            border-radius: var(--border-radius);
-            padding: 38px;
-            margin-bottom: 35px;
-            display: grid;
-            grid-template-columns: 1fr 320px;
-            gap: 35px;
-            align-items: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-            transition: var(--transition);
-        }
-
-        .chapter-card:hover {
-            border-color: var(--purple-glow);
-            box-shadow: 0 15px 40px rgba(147, 51, 234, 0.35);
-        }
-
-        .chap-number-badge {
-            display: inline-block;
-            background: var(--purple-gradient);
-            color: #ffffff;
-            padding: 6px 18px;
-            border-radius: 20px;
-            font-size: 0.88rem;
-            font-weight: 800;
-            margin-bottom: 14px;
-            border: 1px solid var(--purple-glow);
-            letter-spacing: 1px;
-        }
-
-        .chap-title {
-            font-size: 1.65rem;
-            color: #ffffff;
-            margin-bottom: 12px;
-        }
-
-        .chap-desc {
-            color: #cbd5e1;
-            font-size: 1.05rem;
-            line-height: 1.6;
-        }
-
-        /* Guarantee Section (Style Éloquence 30 Jours) */
-        .guarantee-box {
-            background: linear-gradient(135deg, #1a0528 0%, #3b0764 100%);
-            border: 2px solid var(--purple-glow);
-            border-radius: 24px;
-            padding: 50px;
-            color: #ffffff;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            box-shadow: 0 15px 40px rgba(107, 33, 168, 0.4);
-        }
-
-        .guarantee-seal-large {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background: var(--purple-gradient);
-            border: 3px solid var(--pink-accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: #ffffff;
-            margin: 0 auto 24px;
-            box-shadow: 0 0 30px rgba(232, 121, 249, 0.5);
-        }
-
-        
-        /* Responsive Bonus Section */
-        .bonus-cards-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-        .bonus-card {
-            background: var(--lavender-light);
-            border: 2px solid var(--purple-glow);
-            border-radius: 16px;
-            padding: 35px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .bonus-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(124, 58, 237, 0.15);
-        }
-        @media (max-width: 768px) {
-            .bonus-cards-grid {
-                grid-template-columns: 1fr !important;
-                gap: 20px !important;
-            }
-            .bonus-card {
-                padding: 24px 20px !important;
-            }
-            .bonus-card h3 {
-                font-size: 1.25rem !important;
-                line-height: 1.35 !important;
-            }
-        }
-
-        
-        /* Mobile Pixel-Perfect Responsiveness for 3D Laptops & Hero Mockups */
-        @media (max-width: 768px) {
-            .grand-laptops-v-stage {
-                margin-top: -15px;
-            }
-            .grand-lap {
-                width: 220px !important;
-                margin: 0 -10px !important;
-            }
-            .lap-bezel {
-                padding: 6px !important;
-                border-width: 2px !important;
-            }
-            .lap-screen {
-                height: 185px !important;
-                padding: 10px 6px !important;
-                justify-content: space-between !important;
-            }
-            .lap-screen-title {
-                font-size: 0.9rem !important;
-                line-height: 1.2 !important;
-                margin-bottom: 2px !important;
-            }
-            .lap-screen-sub {
-                font-size: 0.72rem !important;
-                margin-bottom: 4px !important;
-            }
-            .lap-screen i {
-                font-size: 1.3rem !important;
-                margin: 2px 0 !important;
-            }
-            .lap-screen-tag {
-                font-size: 0.68rem !important;
-                padding: 3px 8px !important;
-                margin-top: 2px !important;
-                white-space: nowrap !important;
-                max-width: 95% !important;
-                overflow: hidden !important;
-                text-overflow: ellipsis !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .grand-lap {
-                width: 170px !important;
-                margin: 0 -8px !important;
-            }
-            .lap-bezel {
-                padding: 4px !important;
-            }
-            .lap-screen {
-                height: 155px !important;
-                padding: 8px 4px !important;
-            }
-            .lap-screen-title {
-                font-size: 0.75rem !important;
-                letter-spacing: -0.2px !important;
-            }
-            .lap-screen-sub {
-                font-size: 0.65rem !important;
-            }
-            .lap-screen i {
-                font-size: 1.1rem !important;
-            }
-            .lap-screen-tag {
-                font-size: 0.6rem !important;
-                padding: 2px 6px !important;
-                border-radius: 8px !important;
-            }
-        }
-
-        
-        /* Guaranteed Sticky Header on Mobile */
-        .announcement-bar {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            right: 0 !important;
-            width: 100% !important;
-            z-index: 99999 !important;
-            box-shadow: 0 4px 20px rgba(13, 2, 20, 0.6) !important;
-            backdrop-filter: blur(12px) !important;
-            -webkit-backdrop-filter: blur(12px) !important;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding-top: 54px !important;
-            }
-            .announcement-bar {
-                padding: 6px 10px !important;
-                flex-direction: row !important;
-                flex-wrap: nowrap !important;
-                justify-content: space-between !important;
-                align-items: center !important;
-                gap: 6px !important;
-            }
-            .announcement-bar > span:first-child {
-                display: none !important; /* Hide long text on mobile to keep timer & lang selector visible & sleek */
-            }
-            .announcement-bar-mobile-label {
-                display: inline-block !important;
-                font-size: 0.78rem !important;
-                font-weight: 800 !important;
-                color: #ffffff !important;
-                white-space: nowrap !important;
-            }
-            .announcement-bar .timer-badge {
-                font-size: 0.85rem !important;
-                padding: 3px 8px !important;
-                margin: 0 !important;
-            }
-            .custom-lang-dropdown {
-                padding: 3px 8px !important;
-                font-size: 0.75rem !important;
-            }
-            #custom-language-select {
-                font-size: 0.75rem !important;
-            }
-        }
-
-        
-        /* Obliterate Google Translate Top Banner & Fix Body Position */
-        .goog-te-banner-frame.skiptranslate,
-        .goog-te-banner-frame,
-        iframe.goog-te-banner-frame,
-        iframe.skiptranslate,
-        .VIpgJd-Z44p5e-FW12eb-tjhup,
-        .VIpgJd-Z44p5e-O92Vk-x3Ekq,
-        .VIpgJd-Z44p5e-O92Vk-IBnZ6e,
-        #goog-gt-tt,
-        .goog-te-balloon-frame,
-        .goog-tooltip,
-        .goog-tooltip:hover {
-            display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
-            height: 0 !important;
-            width: 0 !important;
-        }
         body {
             top: 0px !important;
             position: static !important;
-        }
-        .goog-text-highlight {
-            background-color: transparent !important;
-            border: none !important;
-            box-shadow: none !important;
-        }
-        #google_translate_element,
-        .goog-te-gadget {
-            height: 0 !important;
-            overflow: hidden !important;
-            position: absolute !important;
-            left: -9999px !important;
-            top: -9999px !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
+            padding-top: 65px;
+            padding-bottom: 50px;
         }
 
-        /* Author Section */
-        .author-section {
-            background: #0a0112;
-            color: #ffffff;
-        }
+        /* Hide Google Translate Top Banner */
+        .goog-te-banner-frame, iframe.skiptranslate, .VIpgJd-Z44p5e-FW12eb-tjhup { display: none !important; }
+        #goog-gt-tt { display: none !important; }
+        .goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
+        body { top: 0px !important; }
 
-        .author-photo-card {
-            display: grid;
-            grid-template-columns: 320px 1fr;
-            gap: 40px;
-            align-items: center;
-            background: var(--dark-card);
-            border: 1px solid rgba(192, 132, 252, 0.3);
-            border-radius: 24px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-        }
-
-        .author-photo-img {
-            width: 100%;
-            max-width: 290px;
-            height: 380px;
-            object-fit: cover;
-            border-radius: 20px;
-            border: 3px solid var(--purple-glow);
-            box-shadow: 0 0 30px rgba(147, 51, 234, 0.5);
-        }
-
-        .author-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .stat-card {
-            background: var(--dark-card);
-            border: 1px solid rgba(192, 132, 252, 0.25);
-            border-radius: var(--border-radius);
-            padding: 26px;
-        }
-
-        .stat-card h4 {
-            font-size: 2.5rem;
-            color: var(--pink-accent);
-            margin-bottom: 4px;
-        }
-
-        .stat-card p {
-            font-size: 0.95rem;
-            color: #cbd5e1;
-            font-weight: 600;
-        }
-
-        /* Final Pricing Box (Style Éloquence Recap) */
-        .pricing-box {
-            background: #ffffff;
-            border-radius: 24px;
-            box-shadow: var(--shadow-lg);
-            border: 3px solid var(--purple-glow);
-            max-width: 860px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .pricing-header {
-            background: var(--purple-gradient);
-            color: #ffffff;
-            padding: 35px;
-            text-align: center;
-        }
-
-        .price-compare {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            margin: 25px 0;
-        }
-
-        .old-price {
-            font-size: 1.5rem;
-            color: #94a3b8;
-            text-decoration: line-through;
-            font-weight: 700;
-        }
-
-        .new-price {
-            font-size: 3.4rem;
-            color: var(--purple-primary);
-            font-weight: 900;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .payment-methods-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin: 25px 0 10px;
-        }
-
-        .pay-pill {
-            background: var(--lavender-light);
-            color: var(--purple-dark);
-            font-weight: 700;
-            font-size: 0.85rem;
-            padding: 6px 14px;
-            border-radius: 20px;
-            border: 1px solid rgba(147, 51, 234, 0.3);
-        }
-
-        .pricing-body {
-            padding: 40px;
-        }
-
-        .discount-badge {
-            background: #ef4444;
-            color: #ffffff;
-            font-weight: 900;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            display: inline-block;
-            box-shadow: 0 4px 10px rgba(239, 68, 68, 0.35);
-        }
-
-        .check-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .check-list li {
-            font-size: 1.05rem;
-            margin-bottom: 12px;
-            line-height: 1.5;
-        }
-
-        /* Responsive Mobile & Tablet */
-        @media (max-width: 900px) {
-            html, body {
-                overflow-x: clip;
-            }
-            .container {
-                padding: 0 16px;
-            }
-            .hero {
-                padding: 45px 0 65px;
-            }
-            .hero-title {
-                font-size: clamp(1.6rem, 5.2vw, 2.3rem);
-                line-height: 1.25;
-            }
-            .hero-subtitle {
-                font-size: 1.05rem;
-                margin-bottom: 25px;
-            }
-            .hero-target-box {
-                padding: 16px 18px;
-                font-size: 0.95rem;
-            }
-            .grand-box-cascade {
-                height: 190px;
-                margin-bottom: -65px;
-            }
-            .box-pos-1, .box-pos-7 { display: none; }
-            .grand-lap { width: 260px !important; margin: 0 -15px !important; }
-            .section-title {
-                font-size: 1.75rem;
-            }
-            .section-description {
-                font-size: 1rem;
-            }
-            .chapter-card {
-                grid-template-columns: 1fr;
-                padding: 24px 18px;
-                gap: 20px;
-            }
-            .author-photo-card {
-                grid-template-columns: 1fr;
-                padding: 24px 18px;
-                text-align: center;
-            }
-            .author-photo-img {
-                max-width: 250px;
-                height: 320px;
-                margin: 0 auto;
-            }
-            .author-stats-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            .stat-card {
-                padding: 20px;
-            }
-            .guarantee-box {
-                padding: 35px 20px;
-                border-radius: 20px;
-            }
-            .guarantee-box h2 {
-                font-size: 1.7rem !important;
-            }
-            .pricing-box {
-                border-radius: 18px;
-            }
-            .pricing-header {
-                padding: 24px 16px;
-            }
-            .pricing-header h3 {
-                font-size: 1.25rem;
-            }
-            .pricing-body {
-                padding: 24px 16px !important;
-            }
-            .price-compare {
-                gap: 10px 14px;
-                margin: 20px 0;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .old-price {
-                font-size: 1.15rem;
-            }
-            .new-price {
-                font-size: 2.2rem;
-            }
-            .discount-badge {
-                font-size: 0.8rem;
-                padding: 4px 10px;
-            }
-            .btn-eloquence {
-                font-size: clamp(0.92rem, 3.8vw, 1.15rem);
-                padding: 16px 14px;
-                border-radius: 10px;
-            }
-            .btn-subtext {
-                font-size: 0.78rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .announcement-bar {
-                font-size: 0.82rem;
-                padding: 8px 10px;
-                flex-direction: column;
-                gap: 4px;
-            }
-            .announcement-bar .timer-badge {
-                font-size: 0.9rem;
-                padding: 2px 10px;
-            }
-            .price-compare {
-                gap: 6px 10px;
-            }
-            .new-price {
-                font-size: 1.8rem;
-            }
-            .old-price {
-                font-size: 1rem;
-            }
-            .discount-badge {
-                font-size: 0.75rem;
-                padding: 3px 8px;
-            }
-            .btn-eloquence {
-                font-size: 0.9rem;
-                padding: 14px 10px;
-            }
-            .pay-pill {
-                font-size: 0.75rem;
-                padding: 4px 10px;
-            }
-        }
-
-        /* Social Proof Live Notification Popup */
-        .social-proof-popup {
+        /* Fixed PDF Navigation Toolbar - Dark Pink / Magenta Design */
+        .pdf-toolbar {
             position: fixed;
-            bottom: 25px;
-            left: 25px;
-            z-index: 9999;
-            background: rgba(15, 3, 24, 0.94);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(192, 132, 252, 0.45);
-            border-radius: 16px;
-            padding: 14px 18px;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(90deg, #4a0e2e 0%, #701a40 50%, #4a0e2e 100%);
+            border-bottom: 2px solid var(--accent-pink);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 2000;
+            box-shadow: 0 4px 20px rgba(236, 72, 153, 0.35);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pdf-title-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #ffffff;
+            white-space: nowrap;
+        }
+
+        .pdf-title-info i { color: #f472b6; font-size: 1.15rem; }
+
+        .pdf-controls-center {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chapter-select {
+            background: #701a40;
+            border: 1px solid var(--accent-pink);
+            color: #ffffff;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+        }
+        .chapter-select option { background: #4a0e2e; color: #ffffff; }
+
+        .pdf-controls-right {
             display: flex;
             align-items: center;
             gap: 14px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 25px rgba(147, 51, 234, 0.35);
-            color: #ffffff;
-            font-family: 'Inter', sans-serif;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-            pointer-events: none;
-            max-width: 380px;
         }
 
-        .social-proof-popup.active {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
-
-        .sp-avatar {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: var(--purple-gradient);
-            border: 2px solid var(--purple-glow);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 0.95rem;
-            color: #ffffff;
-            font-family: 'Outfit', sans-serif;
-            flex-shrink: 0;
-            box-shadow: 0 0 12px rgba(147, 51, 234, 0.5);
-        }
-
-        .sp-content {
-            flex: 1;
-            font-size: 0.88rem;
-            line-height: 1.35;
-        }
-
-        .sp-text {
-            color: #f1f5f9;
-            margin: 0;
-        }
-
-        .sp-text strong {
-            color: #ffffff;
-            font-weight: 800;
-        }
-
-        .sp-time {
-            color: #22c55e;
-            font-size: 0.78rem;
-            font-weight: 600;
-            margin-top: 4px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .sp-close {
-            background: none;
-            border: none;
-            color: #94a3b8;
-            font-size: 1.2rem;
-            cursor: pointer;
-            padding: 0 4px;
-            line-height: 1;
-            transition: var(--transition);
-        }
-
-        .sp-close:hover {
-            color: #ffffff;
-        }
-
-        @media (max-width: 600px) {
-            .social-proof-popup {
-                bottom: 15px;
-                left: 15px;
-                right: 15px;
-                max-width: calc(100vw - 30px);
-                padding: 12px 14px;
-                gap: 10px;
-            }
-            .sp-avatar {
-                width: 38px;
-                height: 38px;
-                font-size: 0.85rem;
-            }
-            .sp-content {
-                font-size: 0.82rem;
-            }
-        /* Custom Language Switcher Dropdown Menu */
-        .custom-lang-dropdown {
+        .pdf-lang-dropdown {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(26, 5, 40, 0.95);
-            padding: 5px 14px;
+            background: #701a40;
+            padding: 6px 14px;
             border-radius: 20px;
-            border: 1.5px solid var(--purple-glow);
-            margin-left: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            transition: var(--transition);
-        }
-
-        .custom-lang-dropdown:hover {
-            border-color: var(--pink-accent);
-            box-shadow: 0 4px 20px rgba(232, 121, 249, 0.4);
+            border: 1px solid var(--accent-pink);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
 
         #custom-language-select {
             background: transparent;
+            border: none;
+            color: #ffffff;
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+        }
+        #custom-language-select option { background: #4a0e2e; color: #ffffff; }
+
+        .btn-pdf-print {
+            background: linear-gradient(135deg, #ec4899, #be185d);
             color: #ffffff;
             border: none;
-            outline: none;
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 800;
-            cursor: pointer;
-            padding: 2px 4px;
-        }
-
-        #custom-language-select option {
-            background: #1a0528;
-            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 6px;
             font-weight: 700;
-            padding: 10px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 10px rgba(236, 72, 153, 0.4);
+        }
+        .btn-pdf-print:hover {
+            background: linear-gradient(135deg, #f472b6, #db2777);
+            transform: translateY(-1px);
         }
 
-        
-        /* Google Translate Seamless Integration */
-        .goog-te-banner-frame.skiptranslate,
-        .goog-te-banner-frame,
-        iframe.goog-te-banner-frame {
-            display: none !important;
-            visibility: hidden !important;
-        }
-        body {
-            top: 0px !important;
-            position: static !important;
-        }
-        .goog-tooltip, .goog-tooltip:hover {
-            display: none !important;
-        }
-        .goog-text-highlight {
-            background-color: transparent !important;
-            border: none !important;
-            box-shadow: none !important;
-        }
-        #goog-gt-tt, .goog-te-balloon-frame {
-            display: none !important;
-        }
-        .skiptranslate {
-            display: inline !important;
+        /* Document Layout */
+        .pdf-document-container {
+            max-width: 840px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
 
-        .goog-te-banner-frame.skiptranslate {
-            display: none !important;
+        .pdf-page {
+            background: var(--page-bg);
+            width: 100%;
+            min-height: 1120px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+            border-radius: 6px;
+            padding: 50px 60px 40px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid var(--border-color);
         }
 
-        body {
-            top: 0px !important;
+        .pdf-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 0.85rem;
+            color: var(--accent-pink-dark);
+            font-style: italic;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .pdf-footer {
+            border-top: 1.5px solid var(--border-color);
+            padding-top: 12px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--accent-pink-dark);
+            font-weight: 700;
+        }
+
+        .pdf-body { flex: 1; }
+
+        /* Cover Page Styling - Full Pink & Rose Gold Gradient */
+        .pdf-page.cover-page {
+            background: linear-gradient(135deg, #be185d 0%, #831843 55%, #4c0519 100%);
+            color: #ffffff;
+            padding: 60px 40px 0px;
+            text-align: center;
+            justify-content: space-between;
+            border: none;
+        }
+
+        .cover-top-header {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            color: #fbcfe8;
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+
+        .cover-main-title {
+            font-size: 3.6rem;
+            font-weight: 900;
+            line-height: 1.05;
+            margin: 30px 0 10px;
+            letter-spacing: 1px;
+            font-family: var(--font-heading);
+            color: #ffffff;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .cover-subtitle {
+            font-size: 1.9rem;
+            color: #fbcfe8;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-family: var(--font-heading);
+        }
+
+        .cover-stars { color: #f472b6; font-size: 1.4rem; margin: 15px 0; letter-spacing: 6px; }
+
+        .cover-tagline { font-size: 1.1rem; font-style: italic; color: #fce7f3; max-width: 600px; margin: 0 auto 25px; }
+
+        .cover-author-wrapper {
+            border-top: 2px solid #f472b6;
+            border-bottom: 2px solid #f472b6;
+            padding: 12px 0;
+            margin: 25px auto;
+            max-width: 520px;
+        }
+
+        .cover-author-name {
+            font-size: 2.3rem;
+            font-weight: 800;
+            color: #fbcfe8;
+            font-style: italic;
+            font-family: var(--font-heading);
+            letter-spacing: 1px;
+        }
+
+        .cover-author-role { font-size: 0.95rem; color: #ffffff; margin-top: 4px; font-weight: 500; }
+
+        .cover-badges-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 650px;
+            margin: 25px auto 30px;
+        }
+
+        .cover-badge-item {
+            border: 1.5px solid rgba(244, 114, 182, 0.7);
+            border-radius: 8px;
+            padding: 10px 4px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #ffffff;
+            background: rgba(236, 72, 153, 0.25);
+            backdrop-filter: blur(4px);
+        }
+
+        .cover-bottom-bar {
+            background: #db2777;
+            color: #ffffff;
+            font-weight: 800;
+            padding: 18px 20px;
+            font-size: 0.95rem;
+            margin-left: -40px;
+            margin-right: -40px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Typography & Content Elements */
+        h1.page-h1 {
+            font-family: var(--font-heading);
+            color: var(--text-heading);
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        h2.page-h2 {
+            font-family: var(--font-heading);
+            color: var(--accent-pink-dark);
+            font-size: 1.5rem;
+            margin: 24px 0 12px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 6px;
+            font-weight: 700;
+        }
+
+        h3.page-h3 {
+            font-family: var(--font-heading);
+            color: var(--accent-pink-dark);
+            font-size: 1.25rem;
+            margin: 18px 0 8px;
+            font-weight: 700;
+        }
+
+        .page-sub { color: #db2777; font-style: italic; font-size: 1.08rem; margin-bottom: 20px; font-weight: 600; }
+
+        p.para { margin-bottom: 16px; text-align: justify; font-size: 0.98rem; line-height: 1.7; }
+
+        /* Boxes & Components */
+        .pdf-quote-box {
+            border: 1.5px solid #f472b6;
+            background: var(--box-gold-bg);
+            padding: 22px 26px;
+            border-radius: 8px;
+            margin: 22px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(244, 114, 182, 0.15);
+        }
+
+        .pdf-quote-text {
+            font-size: 1.08rem;
+            font-weight: 700;
+            color: #831843;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .pdf-sister-box {
+            border: 1.5px solid #ec4899;
+            background: var(--box-sister-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 22px 0;
+            box-shadow: 0 4px 12px rgba(236, 72, 153, 0.12);
+        }
+
+        .pdf-sister-header {
+            background: #db2777;
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 0.92rem;
+            padding: 6px 14px;
+            display: inline-block;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .pdf-metaphor-box {
+            border: 1.5px solid #f43f5e;
+            background: var(--box-metaphor-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 22px 0;
+            box-shadow: 0 4px 12px rgba(244, 63, 94, 0.12);
+        }
+
+        .pdf-metaphor-header {
+            background: #be185d;
+            color: #ffffff;
+            font-weight: 800;
+            padding: 10px 16px;
+            font-size: 0.98rem;
+            letter-spacing: 0.5px;
+        }
+
+        .pdf-metaphor-body { padding: 16px; font-size: 0.95rem; line-height: 1.65; color: #4c0519; }
+
+        /* Table of Contents Clickable Items */
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .toc-item {
+            display: block;
+            text-decoration: none;
+            border-bottom: 1px dashed #f472b6;
+            padding-bottom: 8px;
+            padding-top: 4px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .toc-item:hover {
+            background: #fce7f3;
+            padding-left: 10px;
+        }
+
+        .toc-title { font-weight: 800; color: var(--text-heading); font-size: 1.08rem; }
+        .toc-desc { font-style: italic; color: #701a40; font-size: 0.92rem; margin-top: 2px; }
+
+        /* Checklists */
+        .checklist { list-style: none; margin: 16px 0; }
+        .checklist li { position: relative; padding-left: 28px; margin-bottom: 10px; font-size: 0.96rem; line-height: 1.6; }
+        .checklist li::before { content: "✓"; position: absolute; left: 0; color: #db2777; font-weight: 900; font-size: 1.1rem; }
+        .checklist-cross li::before { content: "✗"; color: #e11d48; }
+
+        .chapter-badge {
+            background: linear-gradient(135deg, #db2777, #9d174d);
+            color: #fff;
+            padding: 5px 16px;
+            border-radius: 4px;
+            display: inline-block;
+            font-weight: 800;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(219, 39, 119, 0.3);
+        }
+
+        /* Print Styles */
+        @media print {
+            body { padding-top: 0; background: #fff; }
+            .pdf-toolbar { display: none !important; }
+            .pdf-document-container { padding: 0; max-width: 100%; gap: 0; }
+            .pdf-page { box-shadow: none; border-radius: 0; page-break-after: always; min-height: 100vh; padding: 40px; border: none; }
+        }
+
+        /* Responsive Mobile Layout */
+        @media (max-width: 768px) {
+            .pdf-page { padding: 30px 20px 25px; }
+            .cover-main-title { font-size: 2.5rem; }
+            .cover-subtitle { font-size: 1.4rem; }
+            .cover-badges-grid { grid-template-columns: repeat(2, 1fr); }
+            .pdf-toolbar { height: auto; padding: 10px; justify-content: center; }
+            .chapter-select { max-width: 100%; }
         }
     </style>
+
 </head>
 <body>
 
-    <!-- Urgency Top Bar with Custom Language Dropdown Menu -->
-    <div class="announcement-bar">
-        <span>⚡ OFFRE SPÉCIALE D'ACCÈS IMMÉDIAT (<span class="price-no-wrap">9&nbsp;900&nbsp;FCFA</span> AU LIEU DE <span class="price-no-wrap">19&nbsp;800&nbsp;FCFA</span>) — CETTE OFFRE EXPIRE DANS :</span>
-        <div class="timer-badge" id="countdown">23:59:59</div>
-        
-        <!-- Custom Language Dropdown Menu -->
-        <div class="custom-lang-dropdown">
-            <i class="fa-solid fa-globe text-pink"></i>
-            <select id="custom-language-select" onchange="changePageLanguage(this.value)">
-                <option value="fr">🇫🇷 Français (FR)</option>
-                <option value="en">🇬🇧 English (EN)</option>
-                <option value="es">🇪🇸 Español (ES)</option>
-                <option value="de">🇩🇪 Deutsch (DE)</option>
-                <option value="it">🇮🇹 Italiano (IT)</option>
-                <option value="pt">🇵🇹 Português (PT)</option>
-                <option value="nl">🇳🇱 Nederlands (NL)</option>
-                <option value="ar">🇸🇦 العربية (AR)</option>
-                <option value="ru">🇷🇺 Русский (RU)</option>
-                <option value="zh-CN">🇨🇳 中文 (ZH)</option>
-                <option value="ja">🇯🇵 日本語 (JA)</option>
-                <option value="tr">🇹🇷 Türkçe (TR)</option>
-                <option value="pl">🇵🇱 Polski (PL)</option>
-                <option value="sv">🇸🇪 Svenska (SV)</option>
-                <option value="da">🇩🇰 Dansk (DA)</option>
-                <option value="no">🇳🇴 Norsk (NO)</option>
-                <option value="fi">🇫🇮 Suomi (FI)</option>
+    <!-- Fixed PDF Control Toolbar -->
+    <div class="pdf-toolbar">
+        <div class="pdf-title-info">
+            <i class="fa-solid fa-file-pdf"></i> SAUVER TON COUPLE SANS PERDRE TA DIGNITÉ
+        </div>
+        <div class="pdf-controls-center">
+            <select class="chapter-select" id="quick-chapter-select" onchange="if(this.value){ scrollToSection(this.value); }">
+                <option value="">📖 Aller au chapitre / partie...</option>
+                <option value="couverture">Couverture</option>
+                <option value="avant-propos">Avant-Propos</option>
+                <option value="toc">Table des Matières</option>
+                <option value="dedicace">Dédicace</option>
+                <option value="introduction">Introduction</option>
+                <option value="chapitre-1">Chapitre 1 — Diagnostic de l'Ombre</option>
+                <option value="chapitre-2">Chapitre 2 — Miroir de l'Homme</option>
+                <option value="chapitre-3">Chapitre 3 — Se Faire Respecter</option>
+                <option value="chapitre-4">Chapitre 4 — Le Lit Froid</option>
+                <option value="chapitre-5">Chapitre 5 — Communication Haute Tension</option>
+                <option value="chapitre-6">Chapitre 6 — Gérer la Tribu</option>
+                <option value="chapitre-7">Chapitre 7 — Éduquer à Deux</option>
+                <option value="chapitre-8">Chapitre 8 — Transformer Frustration</option>
+                <option value="chapitre-9">Chapitre 9 — Plan 30 Jours</option>
+                <option value="chapitre-10">Chapitre 10 — Quand Partir ?</option>
+                <option value="conclusion">Conclusion</option>
+                <option value="annexe">Annexe & Outils</option>
             </select>
         </div>
-        <div id="google_translate_element" style="position: absolute; left: -9999px; top: -9999px; opacity: 0; pointer-events: none;"></div>
-    </div>
-
-    <!-- SECTION 1 : HERO BANNER (STRUCTURE ÉLOQUENCE 2.0) -->
-    <section class="hero text-center">
-        <div class="container">
-            <span class="hero-badge">📘 SAUVER TON COUPLE</span>
-            <h1 class="hero-title">
-                LE PROGRAMME ULTIME POUR RÉSOUDRE LES CRISES DE COUPLE <br>
-                ET RESTAURER L'HARMONIE EN MOINS DE <span>30 JOURS</span>
-            </h1>
-            <p class="hero-subtitle">
-                Un programme complet et structuré pour maîtriser la communication de couple et transformer ta capacité à apaiser les conflits avec impact, même si les tensions sont déjà vives ou installées depuis longtemps.
-            </p>
-
-            <!-- GRAND PANORAMIC 3D BUNDLE STAGE (7 BOXES + DUAL LAPTOPS IN V-ANGLE, 100% VECTOR VIOLET) -->
-            
-    <div class="grand-bundle-stage">
-        <div class="grand-halo-circle"></div>
-        
-        <!-- 7-Box Panoramic Cascade for 9 Chapters & Bonuses -->
-        <div class="grand-box-cascade">
-            <!-- Box 1: Bonus 1 -->
-            <div class="elo-box box-pos-1">
-                <div class="elo-box-top"></div>
-                <div class="elo-box-spine"><span>SAUVER TON COUPLE</span></div>
-                <div class="elo-box-front">
-                    <div class="elo-top-dark">
-                        <h4>SAUVER TON COUPLE</h4>
-                        <p>BONUS #1</p>
-                    </div>
-                    <div class="elo-mid-light">
-                        <div class="elo-circle-icon"><i class="fa-solid fa-comment-dots"></i></div>
-                    </div>
-                    <div class="elo-pill-footer">BONUS #1 : 10 PHRASES</div>
-                </div>
+        <div class="pdf-controls-right">
+            <div class="pdf-lang-dropdown">
+                <i class="fa-solid fa-globe" style="color: var(--accent-pink);"></i>
+                <select id="custom-language-select" onchange="changePageLanguage(this.value)">
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                    <option value="it">🇮🇹 Italiano</option>
+                    <option value="pt">🇵🇹 Português</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                </select>
             </div>
 
-            <!-- Box 2: Module 1-3 -->
-            <div class="elo-box box-pos-2">
-                <div class="elo-box-top"></div>
-                <div class="elo-box-spine"><span>SAUVER TON COUPLE</span></div>
-                <div class="elo-box-front">
-                    <div class="elo-top-dark">
-                        <h4>SAUVER TON COUPLE</h4>
-                        <p>CHAPITRES 1-3</p>
-                    </div>
-                    <div class="elo-mid-light">
-                        <div class="elo-circle-icon"><i class="fa-solid fa-shield-heart"></i></div>
-                    </div>
-                    <div class="elo-pill-footer">M1 : DIAGNOSTIC</div>
-                </div>
-            </div>
-
-            <!-- Box 3: Module 4-6 -->
-            <div class="elo-box box-pos-3">
-                <div class="elo-box-top"></div>
-                <div class="elo-box-spine"><span>SAUVER TON COUPLE</span></div>
-                <div class="elo-box-front">
-                    <div class="elo-top-dark">
-                        <h4>SAUVER TON COUPLE</h4>
-                        <p>CHAPITRES 4-6</p>
-                    </div>
-                    <div class="elo-mid-light">
-                        <div class="elo-circle-icon"><i class="fa-solid fa-fire"></i></div>
-                    </div>
-                    <div class="elo-pill-footer">M2 : INTIMITÉÉ & RESPECT</div>
-                </div>
-            </div>
-
-            <!-- Center Main Box (Guide Principal 9 Chapitres) -->
-            <div class="elo-box box-pos-center">
-                <div class="elo-box-top"></div>
-                <div class="elo-box-spine"><span>SAUVER TON COUPLE — GUIDE OFFICIEL</span></div>
-                <div class="elo-box-front">
-                    <div class="elo-top-dark">
-                        <h3>SAUVER TON COUPLE</h3>
-                        <p>GUIDE PRINCIPAL (9 CHAPITRES)</p>
-                    </div>
-                    <div class="elo-mid-light">
-                        <div class="elo-circle-icon large-icon"><i class="fa-solid fa-crown"></i></div>
-                        <div class="elo-seal-badge">-50%</div>
-                    </div>
-                    <div class="elo-pill-footer">HOMME MODERNE</div>
-                </div>
-            </div>
-
-            <!-- Box 5: Module 7-9 -->
-            <div class="elo-box box-pos-5">
-                <div class="elo-box-top"></div>
-                <div class="elo-box-spine"><span>SAUVER TON COUPLE</span></div>
-                <div class="elo-box-front">
-                    <div class="elo-top-dark">
-                        <h4>SAUVER TON COUPLE</h4>
-                        <p>CHAPITRES 7-9</p>
-                    </div>
-                    <div class="elo-mid-light">
-                        <div class="elo-circle-icon"><i class="fa-solid fa-key"></i></div>
-                    </div>
-                    <div class="elo-pill-footer">M3 : PLAN 30 JOURS</div>
-                </div>
-            </div>
-
-            <!-- Box 6: Bonus 2 -->
-            <div class="elo-box box-pos-6">
-                <div class="elo-box-top"></div>
-                <div class="elo-box-spine"><span>SAUVER TON COUPLE</span></div>
-                <div class="elo-box-front">
-                    <div class="elo-top-dark">
-                        <h4>SAUVER TON COUPLE</h4>
-                        <p>BONUS #2</p>
-                    </div>
-                    <div class="elo-mid-light">
-                        <div class="elo-circle-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                    </div>
-                    <div class="elo-pill-footer">BONUS #2 : 12 ERREURS</div>
-                </div>
-            </div>
-
-            <!-- Box 7: Exercices -->
-            <div class="elo-box box-pos-7">
-                <div class="elo-box-top"></div>
-                <div class="elo-box-spine"><span>SAUVER TON COUPLE</span></div>
-                <div class="elo-box-front">
-                    <div class="elo-top-dark">
-                        <h4>SAUVER TON COUPLE</h4>
-                        <p>EXERCICES</p>
-                    </div>
-                    <div class="elo-mid-light">
-                        <div class="elo-circle-icon"><i class="fa-solid fa-bolt"></i></div>
-                    </div>
-                    <div class="elo-pill-footer">FICHES D'ACTION</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Dual Angled Laptops in Front -->
-        <div class="grand-laptops-v-stage">
-            <!-- Left Laptop -->
-            <div class="grand-lap lap-left">
-                <div class="lap-bezel">
-                    <div class="lap-screen">
-                        <div class="lap-screen-title">SAUVER TON COUPLE</div>
-                        <div class="lap-screen-sub">Guide Ultime</div>
-                        <i class="fa-solid fa-book-open-reader"></i>
-                        <div class="lap-screen-tag">Guide Complet (9 Chapitres)</div>
-                    </div>
-                </div>
-                <div class="lap-keyboard"><div class="lap-notch"></div></div>
-            </div>
-
-            <!-- Right Laptop -->
-            <div class="grand-lap lap-right">
-                <div class="lap-bezel">
-                    <div class="lap-screen">
-                        <div class="lap-screen-title">PLAN 30 JOURS & BONUS</div>
-                        <div class="lap-screen-sub">Action & Désamorçage</div>
-                        <i class="fa-solid fa-square-check"></i>
-                        <div class="lap-screen-tag">10 Phrases + 12 Erreurs</div>
-                    </div>
-                </div>
-                <div class="lap-keyboard"><div class="lap-notch"></div></div>
-            </div>
         </div>
     </div>
-    
 
-            <div class="hero-target-box">
-                <i class="fa-solid fa-bullseye text-pink" style="margin-right:8px;"></i>
-                <strong>Pour qui ?</strong> Pour les hommes mariés, en couple ou engagés qui veulent maîtriser l'art d'apaiser les disputes, captiver le respect de leur partenaire et utiliser les mots comme un levier puissant pour restaurer l'attraction et la paix au foyer.
-            </div>
+    <div id="google_translate_element" style="display:none!important;"></div>
 
-            <a href="https://syalpfmx.mychariow.shop/prd_9n9ofrxp/checkout" class="btn-eloquence">
-                <span>JE REJOINS "SAUVER TON COUPLE" MAINTENANT <span class="btn-price-tag">—&nbsp;9&nbsp;900&nbsp;FCFA</span></span>
-                <span class="btn-subtext">🔒 Offre spéciale aujourd'hui : <span class="price-no-wrap">9&nbsp;900&nbsp;FCFA</span> (15,5 €) au lieu de <span class="price-no-wrap">19&nbsp;800&nbsp;FCFA</span> (-50%)</span>
-            </a>
-        </div>
-    </section>
+    <div class="pdf-document-container">
 
-    <!-- SECTION 2 : TRANSFORMATION "IMAGINEZ POUVOIR..." (STRUCTURE ÉLOQUENCE 2.0) -->
-    <section style="background: #faf5ff;">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">💡 DÉCOUVREZ LA MÉTHODE</span>
-                <h2 class="section-title">QUI TRANSFORME LES HOMMES DÉPASSÉS EN LEADERS DE LEUR FOYER</h2>
-                <p class="section-description">Imaginez pouvoir...</p>
-            </div>
-
-            <div class="imagine-grid">
-                <div class="imagine-card">
-                    <div class="imagine-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                    <div class="imagine-text">Désamorcer instantanément n'importe quelle dispute dès les 10 premières secondes.</div>
+        <!-- PAGE 1: COVER PAGE -->
+        <div class="pdf-page cover-page" id="couverture">
+            <div class="cover-top-header">GUIDE PREMIUM DE COUPLE POUR L'HOMME MODERNE</div>
+            <div>
+                <h1 class="cover-main-title">SAUVER<br>TON COUPLE</h1>
+                <div class="cover-subtitle">SANS PERDRE TA DIGNITÉ</div>
+                <div class="cover-stars">★ ★ ★</div>
+                <p class="cover-tagline">Le guide honnête que tu aurais voulu avoir avant la première dispute.</p>
+                <div style="color: #f43f5e; font-size: 1.2rem; margin-bottom: 10px;">♥ ♥ ♥</div>
+                <div class="cover-author-wrapper">
+                    <div class="cover-author-name">Lina Rela</div>
+                    <div class="cover-author-role">Coach Relationnelle | Auteure</div>
                 </div>
-                <div class="imagine-card">
-                    <div class="imagine-icon"><i class="fa-solid fa-brain"></i></div>
-                    <div class="imagine-text">Transformer votre nervosité et votre colère en un calme magnétique qui inspire le respect.</div>
-                </div>
-                <div class="imagine-card">
-                    <div class="imagine-icon"><i class="fa-solid fa-comments"></i></div>
-                    <div class="imagine-text">Exprimer vos besoins fondamentaux avec clarté sans que la conversation ne tourne au drame.</div>
-                </div>
-                <div class="imagine-card">
-                    <div class="imagine-icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
-                    <div class="imagine-text">Briser le silence et la distance émotionnelle pour retrouver une vraie connexion physique et affective.</div>
-                </div>
-                <div class="imagine-card">
-                    <div class="imagine-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <div class="imagine-text">Utiliser des mots précis comme un instrument d'apaisement pour préserver votre dignité.</div>
-                </div>
-                <div class="imagine-card">
-                    <div class="imagine-icon"><i class="fa-solid fa-house-chimney-crack"></i></div>
-                    <div class="imagine-text">Changer radicalement l'atmosphère et la sérénité de votre maison au quotidien.</div>
+                <div class="cover-badges-grid">
+                    <a href="#toc" class="cover-badge-item" style="text-decoration:none;">10 Chapitres</a>
+                    <a href="#chapitre-9" class="cover-badge-item" style="text-decoration:none;">Exercices Pratiques</a>
+                    <a href="#chapitre-9" class="cover-badge-item" style="text-decoration:none;">Plan 30 jours</a>
+                    <a href="#annexe" class="cover-badge-item" style="text-decoration:none;">50 Pages</a>
                 </div>
             </div>
-
-            <div class="text-center" style="margin-top: 35px;">
-                <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 25px;">
-                    Cette transformation n'est pas réservée à quelques privilégiés. Elle est accessible à <strong>TOUS</strong>, grâce à un système éprouvé et structuré étape par étape.
-                </p>
-                <a href="https://syalpfmx.mychariow.shop/prd_9n9ofrxp/checkout" class="btn-eloquence" style="margin: 0 auto;">
-                    <span>JE REJOINS "SAUVER TON COUPLE" MAINTENANT <span class="btn-price-tag">—&nbsp;9&nbsp;900&nbsp;FCFA</span></span>
-                </a>
+            <div class="cover-bottom-bar">
+                De la souffrance silencieuse à un foyer apaisé - Une voix de femme, pour l'homme qui lutte
             </div>
         </div>
-    </section>
 
-    <!-- SECTION 3 : LES MODULES DÉTAILLÉS (STRUCTURE ÉLOQUENCE 2.0 - 9 MODULES/CHAPITRES) -->
-    <section class="chapters-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" style="color: var(--pink-accent);">VOICI TOUT CE QUE VOUS ALLEZ APPRENDRE</span>
-                <h2 class="section-title">LA FORMATION COMPLÈTE SAUVER TON COUPLE (9 CHAPITRES)</h2>
-                <p class="section-description">
-                    Un programme complet en 9 étapes immersives pour maîtriser la résolution de crise et développer un leadership bienveillant :
-                </p>
+        <!-- PAGE 2: AVANT-PROPOS -->
+        <div class="pdf-page" id="avant-propos">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <h1 class="page-h1">Avant-Propos</h1>
+                    <div class="page-sub">Ce que ce livre va changer dans ta vie</div>
+                    <p class="para">Ce livre est né d'une conviction simple : les hommes qui souffrent dans leur foyer manquent rarement d'amour. Ils manquent d'outils. Ils manquent de mots. Ils manquent d'une voix qui leur parle avec honnêteté et bienveillance en même temps.</p>
+                    <p class="para">Depuis des années, j'observe des hommes extraordinaires - des pères dévoués, des travailleurs acharnés, des hommes au cœur généreux - se perdre dans des foyers qui ressemblent de plus en plus à des champs de mines émotionnels. Ils marchent sur des œufs. Ils retiennent leur souffle. Ils espèrent que demain sera différent sans changer quoi que ce soit aujourd'hui.</p>
+                    <p class="para">Ce guide n'est pas une promesse de miracle. Un couple qui souffre ne se répare pas en lisant 50 pages. Mais un homme qui comprend ce qui se passe, qui prend sa part de responsabilité avec lucidité, et qui agit avec cohérence peut transformer l'atmosphère de son foyer de façon significative et durable.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Ce n'est pas en regardant la tempête qu'on apprend à naviguer. C'est en comprenant le vent, en apprenant à tenir le gouvernail, et en ayant le courage de rester le capitaine."</p>
+                    </div>
+                    <p class="para">Ce que je te demande, c'est de lire ce livre avec ouverture. Certaines pages vont te mettre mal à l'aise. D'autres vont te soulager - parce que tu vas enfin trouver des mots pour ce que tu ressens depuis des mois. Certains chapitres vont te demander de faire des choses difficiles. Je te promets qu'elles en valent la peine.</p>
+                    <p class="para">Je t'ai écrit chaque mot de ce guide en pensant à toi. À cet homme qui rentre du travail et ne sait plus comment entrer dans sa propre maison. À celui qui regarde sa femme endormie et se demande où est passée la femme qu'il a choisie. À celui qui donne tout ce qu'il a et qui a l'impression que ce n'est jamais assez.</p>
+                    <p class="para"><em>Ce guide est pour toi. Chaque mot.</em></p>
+                    <div style="text-align: right; margin-top: 25px; font-weight: 800; font-size: 1.4rem; color: var(--accent-magenta); font-style: italic;">Lina Rela</div>
+                </div>
             </div>
+            <div class="pdf-footer">-- 1 --</div>
+        </div>
 
-            <!-- Chapitre 1 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 1</span>
-                    <h3 class="chap-title">Le Diagnostic de l'Ombre</h3>
-                    <p class="chap-desc">
-                        Pourquoi tu as l'impression de n'être qu'un portefeuille ? Analyser la perte de connexion émotionnelle et identifier les signaux d'alerte invisibles avant la rupture.
+        <!-- PAGE 3: TABLE DES MATIÈRES -->
+        <div class="pdf-page" id="toc">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <h1 class="page-h1">Table des Matières</h1>
+                    <div style="width: 100%; height: 3px; background: #be123c; margin-bottom: 20px;"></div>
+                    <div class="toc-list">
+                        <a href="#introduction" class="toc-item"><div class="toc-title">Introduction</div><div class="toc-desc">Mon frère, assieds-toi, on doit se parler</div></a>
+                        <a href="#chapitre-1" class="toc-item"><div class="toc-title">Chapitre 1</div><div class="toc-desc">Le Diagnostic de l'Ombre - Pourquoi tu as l'impression de n'être qu'un portefeuille</div></a>
+                        <a href="#chapitre-2" class="toc-item"><div class="toc-title">Chapitre 2</div><div class="toc-desc">Le Miroir de l'Homme - Avant de la changer, regarde-toi</div></a>
+                        <a href="#chapitre-3" class="toc-item"><div class="toc-title">Chapitre 3</div><div class="toc-desc">L'Art de se Faire Respecter - Se faire respecter sans crier ni bouder</div></a>
+                        <a href="#chapitre-4" class="toc-item"><div class="toc-title">Chapitre 4</div><div class="toc-desc">Le Lit Froid - Briser la grève de l'intimité</div></a>
+                        <a href="#chapitre-5" class="toc-item"><div class="toc-title">Chapitre 5</div><div class="toc-desc">La Communication Haute Tension - Parler sans que ça finisse en dispute</div></a>
+                        <a href="#chapitre-6" class="toc-item"><div class="toc-title">Chapitre 6</div><div class="toc-desc">Gérer la Tribu - Famille, belle-famille et frontières saines</div></a>
+                        <a href="#chapitre-7" class="toc-item"><div class="toc-title">Chapitre 7</div><div class="toc-desc">Éduquer à Deux - Retrouver son autorité paternelle</div></a>
+                        <a href="#chapitre-8" class="toc-item"><div class="toc-title">Chapitre 8</div><div class="toc-desc">Transformer la Frustration en Force - Gérer sa colère et sa solitude émotionnelle</div></a>
+                        <a href="#chapitre-9" class="toc-item"><div class="toc-title">Chapitre 9</div><div class="toc-desc">Le Plan d'Action sur 30 Jours - Exercices quotidiens pour changer l'atmosphère</div></a>
+                        <a href="#chapitre-10" class="toc-item"><div class="toc-title">Chapitre 10</div><div class="toc-desc">Quand est-il Temps de Partir ? - La sagesse de savoir si le combat en vaut la peine</div></a>
+                        <a href="#conclusion" class="toc-item"><div class="toc-title">Conclusion</div><div class="toc-desc">Je suis fière de toi, mon frère - Le mot final de Lina Rela</div></a>
+                        <a href="#annexe" class="toc-item"><div class="toc-title">Annexe</div><div class="toc-desc">Les Outils Essentiels en Un Coup d'Oeil</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 2 --</div>
+        </div>
+
+        <!-- PAGE 4: DÉDICACE -->
+        <div class="pdf-page" id="dedicace">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body" style="display: flex; flex-direction: column; justify-content: center; height: 100%; min-height: 600px; text-align: center;">
+                    <p style="font-size: 1.5rem; font-style: italic; color: #701a40; line-height: 2; margin-bottom: 40px; font-family: var(--font-heading);">
+                        À tous les hommes qui souffrent en silence dans leur foyer,<br>
+                        à ceux qui ont cessé d'y croire,<br>
+                        et à ceux qui cherchent encore.
                     </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 1</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #1</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <div style="width: 150px; height: 2px; background: var(--accent-gold); margin: 0 auto 40px;"></div>
+                    <div class="pdf-quote-box" style="max-width: 600px; margin: 0 auto;">
+                        <p class="pdf-quote-text">"L'arbre le plus solide est celui qui a survécu à la tempête."</p>
+                        <div style="margin-top: 10px; font-size: 0.95rem; color: #854d0e; font-style: normal; font-weight: 600;">- Proverbe africain</div>
                     </div>
                 </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 1 : Diagnostic de l'Ombre</span>
-                </div>
             </div>
+            <div class="pdf-footer">-- 3 --</div>
         </div>
 
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
+        <!-- PAGES 5-7: INTRODUCTION -->
+        <div class="pdf-page" id="introduction">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <h1 class="page-h1">Introduction</h1>
+                    <div class="page-sub">Mon frère, assieds-toi. On doit se parler.</div>
+                    <p class="para">Je m'appelle <strong>Lina Rela</strong>. Et si tu lis ces lignes aujourd'hui, c'est probablement parce que tu portes quelque chose de très lourd en ce moment. Quelque chose que tu n'as dit à personne. Pas à tes amis, parce qu'ils rigolent de tout. Pas à ta famille, parce qu'ils vont faire des ragots. Pas à elle, parce que ça finit toujours en dispute. Alors tu portes ça seul. Et ça pèse.</p>
+                    <p class="para">Peut-être que tu rentres du travail le soir et que la maison est froide - pas de température, mais d'ambiance. Peut-être qu'elle ne te regarde plus vraiment quand tu parles. Peut-être que le dernier vrai moment d'intimité entre vous, c'était il y a si longtemps que tu essaies de ne plus compter. Peut-être qu'elle te compare à son collègue, à son frère, à 'n'importe qui d'autre que toi'. Et toi, tu ravales ta salive. Tu sors marcher. Ou tu te noies dans ton téléphone. Ou tu gardes tout pour toi.</p>
+                    <p class="para">Mon frère, je t'ai vu. Je te vois. Et je veux que tu saches que la douleur que tu ressens est réelle, légitime, et que tu n'es pas fou de souffrir.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Un homme qui souffre en silence dans son foyer n'est pas un homme faible. C'est un homme qui n'a pas encore eu les bons outils. Ce guide est ces outils."</p>
                     </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 1</div>
-                    <div class="lap-sub">Diagnostic de l'Ombre</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Analyser la perte de connexion émotionne...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <!-- Chapitre 2 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 2</span>
-                    <h3 class="chap-title">Le Miroir de l'Homme</h3>
-                    <p class="chap-desc">
-                        Avant de la changer elle, regarde-toi. Retrouver sa confiance en soi, son estime personnelle et son leadership au sein du foyer.
-                    </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 2</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #2</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-user-astronaut"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 2 : Le Miroir de l'Homme</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 2</div>
-                    <div class="lap-sub">Le Miroir de l'Homme</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-user-astronaut"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Retrouver sa confiance et son leadership...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <!-- Chapitre 3 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 3</span>
-                    <h3 class="chap-title">L'Art de se faire respecter (Sans crier)</h3>
-                    <p class="chap-desc">
-                        Comment réagir face au mépris ou à la comparaison sans entrer dans la violence verbale ni dans le silence boudeur passif-agressif.
-                    </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 3</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #3</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 3 : L'Art de se faire respecter</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 3</div>
-                    <div class="lap-sub">L'Art de se faire respecter</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Réagir sans crier ni bouder...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <!-- Chapitre 4 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 4</span>
-                    <h3 class="chap-title">Le Lit Froid – Briser la Grève de l'Intimité</h3>
-                    <p class="chap-desc">
-                        Comprendre la psychologie du désir féminin et reconnecter physiquement avec ta partenaire sans mendier ni créer de pression.
-                    </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 4</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #4</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-fire-flame-curved"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 4 : Le Lit Froid</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 4</div>
-                    <div class="lap-sub">Le Lit Froid</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-fire-flame-curved"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Briser la grève de l'intimité sans mendi...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <!-- Chapitre 5 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 5</span>
-                    <h3 class="chap-title">La Communication "Haute Tension"</h3>
-                    <p class="chap-desc">
-                        Comment parler de tes besoins fondamentaux sans que la conversation ne finisse en dispute. Apprendre l'écoute active et l'affirmation de soi.
-                    </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 5</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #5</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 5 : Communication Haute Tension</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 5</div>
-                    <div class="lap-sub">Communication Haute Tension</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Parler de ses besoins sans dispute...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <!-- Chapitre 6 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 6</span>
-                    <h3 class="chap-title">Gérer la "Tribu" (Famille et Belle-famille)</h3>
-                    <p class="chap-desc">
-                        Mettre des frontières saines et inébranlables entre ton foyer et les influences extérieures ou intromissions familiales.
-                    </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 6</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #6</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-people-roof"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 6 : Gérer la Tribu</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 6</div>
-                    <div class="lap-sub">Gérer la Tribu</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-people-roof"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Mettre des frontières saines avec la fam...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <!-- Chapitre 7 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 7</span>
-                    <h3 class="chap-title">Transformer la frustration en force</h3>
-                    <p class="chap-desc">
-                        Gérer sa propre colère, sa solitude émotionnelle et trouver ses propres piliers de soutien sans impacter négativement la relation.
-                    </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 7</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #7</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-dumbbell"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 7 : Frustration en Force</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 7</div>
-                    <div class="lap-sub">Frustration en Force</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-dumbbell"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Gérer sa colère et sa solitude...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <!-- Chapitre 8 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 8</span>
-                    <h3 class="chap-title">Le Plan d'Action sur 30 jours</h3>
-                    <p class="chap-desc">
-                        Des exercices concrets, simples et quotidiens pour transformer radicalement l'atmosphère de la maison en 1 mois.
-                    </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 8</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #8</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-calendar-days"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 8 : Plan d'Action 30 Jours</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 8</div>
-                    <div class="lap-sub">Plan d'Action 30 Jours</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-calendar-days"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Exercices quotidiens pour la maison...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <!-- Chapitre 9 -->
-            <div class="chapter-card">
-                <div>
-                    <span class="chap-number-badge">CHAPITRE 9</span>
-                    <h3 class="chap-title">Quand est-il temps de partir ?</h3>
-                    <p class="chap-desc">
-                        La sagesse et la lucidité nécessaires pour savoir si le combat en vaut encore la peine et préserver sa dignité dans tous les cas.
-                    </p>
-                </div>
-                
-    <div class="eloquence-mockup-stage">
-        <div class="eloquence-circle-bg"></div>
-
-        <div class="eloquence-box-back">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>SAUVER TON COUPLE — CHAPITRE 9</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>CHAPITRE #9</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-compass"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>CHAP. 9 : Temps de Partir ?</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-box-front">
-            <div class="box3d-top-lid"></div>
-            <div class="box3d-spine-left"><span>HOMME MODERNE</span></div>
-            <div class="box3d-front-panel">
-                <div class="box-top-dark">
-                    <h4>SAUVER TON COUPLE</h4>
-                    <p>HOMME MODERNE</p>
-                </div>
-                <div class="box-mid-light">
-                    <div class="box-circle-emblem">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-                </div>
-                <div class="box-bottom-pill">
-                    <span>GUIDE OFFICIEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="eloquence-laptop-front">
-            <div class="laptop-screen-bezel">
-                <div class="laptop-display-content">
-                    <div class="lap-title">CHAPITRE 9</div>
-                    <div class="lap-sub">Temps de Partir ?</div>
-                    <div class="lap-icon">
-                        <i class="fa-solid fa-compass"></i>
-                    </div>
-                    <div class="lap-module-tag">GUIDE HOMME MODERNE</div>
-                    <div class="lap-detail">Savoir si le combat en vaut la peine...</div>
-                </div>
-            </div>
-            <div class="laptop-keyboard-deck">
-                <div class="laptop-notch"></div>
-            </div>
-        </div>
-    </div>
-    
-            </div>
-
-            <div class="text-center" style="margin-top: 40px;">
-                <a href="https://syalpfmx.mychariow.shop/prd_9n9ofrxp/checkout" class="btn-eloquence" style="margin: 0 auto;">
-                    <span>JE REJOINS "SAUVER TON COUPLE" MAINTENANT <span class="btn-price-tag">—&nbsp;9&nbsp;900&nbsp;FCFA</span></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-                <!-- SECTION 4 : LES BONUS EXCLUSIFS (STRUCTURE ÉLOQUENCE 2.0) -->
-    <section style="background: #ffffff;">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">🎁 MAIS CE N'EST PAS TOUT !</span>
-                <h2 class="section-title">VOICI LES BONUS EXCLUSIFS INCLUS DANS VOTRE PROGRAMME</h2>
-                <p class="section-description">Des ressources complémentaires prêtes à l'emploi offertes aujourd'hui :</p>
-            </div>
-
-            <div class="bonus-cards-grid">
-                <!-- Bonus 1 -->
-                <div class="bonus-card">
-                    <span style="background: #dc2626; color: #fff; font-weight: 800; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; text-transform: uppercase;">GRATUIT</span>
-                    <p style="color: var(--purple-primary); font-weight: 800; font-size: 1.1rem; margin: 10px 0;">Valeur : <span class="price-no-wrap">6&nbsp;387&nbsp;FCFA</span> / 10 €</p>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 12px;">BONUS #1 : 10 phrases pour désamorcer un conflit immédiatement</h3>
-                    <p style="color: var(--text-muted); font-size: 1.02rem;">
-                        Un ensemble de phrases simples, prêtes à utiliser dans les moments tendus pour calmer une discussion, éviter l'escalade et reprendre le contrôle émotionnel au bon moment.
-                    </p>
-                </div>
-
-                <!-- Bonus 2 -->
-                <div class="bonus-card">
-                    <span style="background: #dc2626; color: #fff; font-weight: 800; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; text-transform: uppercase;">GRATUIT</span>
-                    <p style="color: var(--purple-primary); font-weight: 800; font-size: 1.1rem; margin: 10px 0;">Valeur : <span class="price-no-wrap">7&nbsp;664&nbsp;FCFA</span> / 12 €</p>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 12px;">BONUS #2 : Les 12 erreurs qui détruisent un couple sans s'en rendre compte</h3>
-                    <p style="color: var(--text-muted); font-size: 1.02rem;">
-                        Découvre les comportements les plus courants qui fragilisent une relation (mauvaises réactions en dispute, paroles blessantes, distance). Chaque erreur est accompagnée de sa solution.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 5 : RÉCAPITULATIF FINAL & COMMANDE (STRUCTURE ÉLOQUENCE RECAP) -->
-    <section style="background: #faf5ff;" id="commander">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">⚠️ ATTENTION : OFFRE SPÉCIALE D'ACCÈS IMMÉDIAT !</span>
-                <h2 class="section-title">VOICI LE RÉCAPITULATIF DE TOUT CE QUE VOUS ALLEZ RECEVOIR</h2>
-            </div>
-
-            <div class="pricing-box">
-                <div class="pricing-header">
-                    <h3>ACCÈS IMMÉDIAT AU PROGRAMME "SAUVER TON COUPLE"</h3>
-                    <p>Format numérique téléchargeable sécurisé</p>
-                </div>
-
-                <div class="pricing-body">
-                    <ul class="check-list" style="margin-bottom: 30px;">
-                        <li><i class="fa-solid fa-circle-check text-purple"></i> <strong>Les 9 Chapitres Complet du Programme</strong> — <em>Valeur : <span class="price-no-wrap">20&nbsp;269&nbsp;FCFA</span> / 30.8 €</em></li>
-                        <li><i class="fa-solid fa-circle-check text-purple"></i> <strong>BONUS #1 : 10 phrases de désamorçage immédiat</strong> — <em>Valeur : <span class="price-no-wrap">6&nbsp;387&nbsp;FCFA</span> / 10 € (GRATUIT)</em></li>
-                        <li><i class="fa-solid fa-circle-check text-purple"></i> <strong>BONUS #2 : Les 12 erreurs destructrices à éviter</strong> — <em>Valeur : <span class="price-no-wrap">7&nbsp;664&nbsp;FCFA</span> / 12 € (GRATUIT)</em></li>
-                        <li><i class="fa-solid fa-circle-check text-purple"></i> <strong>Le Plan d'Action sur 30 Jours</strong> (Exercices quotidiens) — <em>Inclus</em></li>
+                    <h2 class="page-h2">Qui suis-je pour te parler de tout ça ?</h2>
+                    <p class="para">Je ne suis pas une psychologue en blouse blanche. Je suis une femme qui a grandi en observant les hommes autour d'elle - son père, ses frères, ses amis - se débattre en silence dans leurs foyers. Une femme qui a écouté des centaines d'histoires de couples au bord du gouffre. Une femme qui connaît le cœur féminin de l'intérieur - avec ses contradictions, ses peurs, ses besoins non dits - et qui a choisi de mettre cette connaissance au service des hommes qui veulent vraiment comprendre, pas juste gagner une dispute.</p>
+                    <p class="para">Pense à moi comme à ta grande sœur. Celle qui n'a pas peur de te dire la vérité, même quand elle pique. Celle qui va te secouer les épaules quand tu fais n'importe quoi. Mais aussi celle qui sera là pour souffler sur la brûlure après.</p>
+                    <h2 class="page-h2">Ce que ce guide n'est PAS</h2>
+                    <ul class="checklist checklist-cross">
+                        <li>Ce n'est pas un manuel pour 'dresser' ta femme ou la contrôler.</li>
+                        <li>Ce n'est pas une liste de techniques de manipulation empruntées à des forums douteux.</li>
+                        <li>Ce n'est pas un sermon religieux sur la patience et l'obéissance.</li>
+                        <li>Ce n'est pas non plus une attaque contre les femmes - je suis une femme, rappelle-toi.</li>
                     </ul>
+                    <h2 class="page-h2">Ce que ce guide EST</h2>
+                    <ul class="checklist">
+                        <li>Une analyse honnête de ce qui se passe vraiment dans ton foyer.</li>
+                        <li>Un miroir que tu as besoin de regarder, même si c'est inconfortable.</li>
+                        <li>Des outils concrets pour transformer l'atmosphère de ta maison.</li>
+                        <li>Un espace où tu as le droit de souffrir, de douter, et de vouloir mieux.</li>
+                        <li>Une voix féminine qui dit la vérité sur ce que les femmes veulent sans toujours savoir le demander.</li>
+                    </ul>
+                    <div class="pdf-sister-box">
+                        <div class="pdf-sister-header">Conseil de grande sœur</div>
+                        <p style="font-size: 0.95rem; color: #4c0519;">Avant de continuer, je te demande une chose : lis ce guide avec un carnet à côté. Pas pour noter des formules magiques. Pour noter CE QUE TU RESSENS en lisant. Tes émotions sont de l'information précieuse. Ne les laisse pas s'échapper.</p>
+                    </div>
+                    <p class="para">Dix chapitres. Dix miroirs. Un seul objectif : que tu sortes de ce guide avec les épaules moins lourdes, une direction claire, et la certitude que tu peux être l'homme que ta famille mérite - et que TOI tu mérites d'être.</p>
+                    <p class="para"><em>Alors assieds-toi, mon frère. Prends un verre d'eau. Et tournons la page ensemble.</em> - <strong>Lina Rela</strong></p>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 4 / 6 --</div>
+        </div>
 
-                    <div class="text-center" style="border-top: 2px dashed #e2e8f0; padding-top: 25px;">
-                        <p style="font-size: 1.1rem; color: var(--text-muted);">VALEUR TOTALE DU PROGRAMME : <span style="text-decoration: line-through; font-weight: 700;"><span class="price-no-wrap">45&nbsp;000&nbsp;FCFA</span> / 68 €</span></p>
-                        <p style="font-size: 1.1rem; color: var(--text-muted); margin-top: 4px;">PRIX HABITUEL : <span style="text-decoration: line-through; font-weight: 700;"><span class="price-no-wrap">19&nbsp;800&nbsp;FCFA</span> / 31 €</span></p>
-
-                        <div class="price-compare">
-                            <span class="old-price price-no-wrap">19&nbsp;800&nbsp;FCFA</span>
-                            <span class="new-price price-no-wrap">9&nbsp;900&nbsp;FCFA</span>
-                            <span class="discount-badge">-50% AUJOURD'HUI</span>
-                        </div>
-                        <p style="color: var(--purple-primary); font-weight: 800; font-size: 1.15rem; margin-bottom: 25px;">Soit seulement 15,5 € (Offre valable jusqu'à ce soir 23h59)</p>
-
-                        <a href="https://syalpfmx.mychariow.shop/prd_9n9ofrxp/checkout" class="btn-eloquence" style="margin: 0 auto;">
-                            <span>JE REJOINS "SAUVER TON COUPLE" MAINTENANT <span class="btn-price-tag">(<span class="price-no-wrap">9&nbsp;900&nbsp;FCFA</span>)</span></span>
-                            <span class="btn-subtext">⚡ Paiement sécurisé par Mobile Money (Wave, MTN, Moov, Orange, Airtel, Tmoney) & Carte Bancaire</span>
-                        </a>
-
-                        <div class="payment-methods-grid">
-                            <span class="pay-pill">Wave</span>
-                            <span class="pay-pill">MTN Mobile Money</span>
-                            <span class="pay-pill">Moov Money</span>
-                            <span class="pay-pill">Orange Money</span>
-                            <span class="pay-pill">Airtel Money</span>
-                            <span class="pay-pill">Free Sénégal</span>
-                            <span class="pay-pill">Celtis Cash</span>
-                            <span class="pay-pill">Coris Money</span>
-                            <span class="pay-pill">Tmoney</span>
-                            <span class="pay-pill">Carte Bancaire (VISA/Mastercard)</span>
-                        </div>
+        <!-- PAGES 8-11: CHAPITRE 1 -->
+        <div class="pdf-page" id="chapitre-1">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 1</div>
+                    <h1 class="page-h1">Le Diagnostic de l'Ombre</h1>
+                    <div class="page-sub">Pourquoi tu as l'impression de n'être qu'un portefeuille - et ce que ça cache vraiment</div>
+                    <p class="para">Tu paies le loyer. Tu remplis le frigo. Tu répares ce qui est cassé. Tu meures d'envie de rendre ta famille heureuse. Et pourtant, à la fin de la journée, tu as cette sensation étrange - comme si ta femme te regardait comme on regarde un distributeur automatique. Elle appuie sur les boutons quand elle a besoin de quelque شيء, et le reste du temps, tu es juste... là.</p>
+                    <p class="para">Si tu te reconnais dans ces mots, sache que tu n'es ni paranoïaque ni victime. Tu traverses ce que j'appelle le <strong>Syndrome du Pourvoyeur Invisible</strong>. Et c me plus commun que tu ne le crois.</p>
+                    <h2 class="page-h2">Comprendre ce qui s'est passé</h2>
+                    <p class="para">Au début de votre relation, tu étais un homme avec une mission, une énergie, une présence. Elle t'a choisi pour ça. Mais progressivement - par les responsabilités, la routine, les enfants, le travail - tu t'es transformé en 'fonctionnaire du foyer'. Tu fais tourner la machine. Mais tu n'animes plus rien.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Un couple ne meurt pas d'un grand choc. Il meurt de mille petits abandons. Mille petites fois où l'on a choisi le confort du silence à la difficulté de la connexion."</p>
+                    </div>
+                    <h2 class="page-h2">Les signes que la connexion émotionnelle est rompue</h2>
+                    <ul class="checklist">
+                        <li><strong>Elle ne te raconte plus rien de personnel.</strong> Ses joies, ses angoisses, ses projets - tu les apprends par quelqu'un d'autre.</li>
+                        <li><strong>Les conversations sont purement logistiques.</strong> 'T'as payé l'électricité ?', 'Le petit a rendez-vous chez le médecin jeudi.'</li>
+                        <li><strong>Elle ne rit plus avec toi.</strong> Elle peut encore rire - avec ses amies, en regardant son téléphone - mais plus avec toi.</li>
+                        <li><strong>Les témoignages d'affection ont disparu.</strong> Plus de main tendue, plus de regard prolongé, plus de 'merci' sincère.</li>
+                        <li><strong>Elle te compare.</strong> À d'autres hommes, à d'autres couples, à ce qu'il 'aurait fallu faire' selon elle.</li>
+                        <li><strong>Tu te sens jugé en permanence.</strong> Chaque décision que tu prends est scrutée, critiquée, minimisée.</li>
+                    </ul>
+                    <h2 class="page-h2">L'erreur de diagnostic la plus fréquente</h2>
+                    <p class="para">La plupart des hommes dans cette situation font la même erreur : ils pensent que le problème, c'est <em>elle</em>. 'Elle a changé.' 'Elle n'est plus reconnaissante.' 'Elle est devenue matérialiste.' Peut-être. Mais voici ce que personne ne te dit : quand une femme se déconnecte émotionnellement de son homme, c'est presque toujours parce qu'elle a déjà envoyé des signaux - et qu'ils ont été ignorés.</p>
+                    <div class="pdf-metaphor-box">
+                        <div class="pdf-metaphor-header"><i class="fa-solid fa-tree"></i> La métaphore de l'arbre et du sol</div>
+                        <div class="pdf-metaphor-body">Imagine ta relation comme un arbre. Les feuilles qui tombent, la froideur, le manque de respect - ce sont les symptômes visibles. Mais le vrai problème, c'est dans le sol - dans les racines de votre connexion. Si tu essaies de coller les feuilles avec du scotch (faire des cadeaux, meubler, supplier), tu travailles sur les symptômes. Ce guide travaille sur le sol.</div>
+                    </div>
+                    <h2 class="page-h2">Anatomie d'un processus lent</h2>
+                    <p class="para"><strong>Phase 1 - L'éloignement silencieux:</strong> Elle essaie de communiquer un besoin. Tu n'entends pas. Puis elle se fatigue.<br>
+                    <strong>Phase 2 - Le ressentiment:</strong> Elle accumule. Chaque petite friction devient une pierre dans le mur qu'elle construit.<br>
+                    <strong>Phase 3 - La distance protectrice:</strong> Elle se protège en s'investissant ailleurs (amies, réseaux, travail).<br>
+                    <strong>Phase 4 - La cohabitation froide:</strong> Vous vivez comme deux colocataires polis. Le foyer est en état de survie.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"La colère dans un couple, c'est du feu. Le froid total, c'est la cendre. Tant qu'il y a du feu, il y a quelque chose à travailler."</p>
+                    </div>
+                    <h2 class="page-h2">Faire le diagnostic de ta relation - l'exercice de la température</h2>
+                    <p class="para">Prends note sur 10 des éléments suivants : Communication, Intimité physique, Respect mutuel, Projets communs, Rire et légèreté, Confiance, Indépendance saine.</p>
+                    <div class="pdf-sister-box">
+                        <div class="pdf-sister-header">Conseil de grande sœur</div>
+                        <p style="font-size: 0.95rem; color: #4c0519;">Liste trois choses que tu as abandonnées pour cette relation - des passions, des amis, des projets. Un homme équilibré est un meilleur partenaire qu'un homme qui se sacrifie.</p>
                     </div>
                 </div>
             </div>
+            <div class="pdf-footer">-- 7 / 10 --</div>
         </div>
-    </section>
 
-    <!-- SECTION 6 : GARANTIE DE 30 JOURS (STRUCTURE ÉLOQUENCE 2.0) -->
-    <section style="background: #ffffff;">
-        <div class="container">
-            <div class="guarantee-box">
-                <div class="guarantee-seal-large"><i class="fa-solid fa-shield-heart"></i></div>
-                <h2 style="font-size: 2.2rem; margin-bottom: 16px; color: #ffffff;">Garantie Satisfait ou Remboursé de 30 jours</h2>
-                <p style="font-size: 1.15rem; color: var(--lavender-light); line-height: 1.7; margin-bottom: 24px;">
-                    Je suis tellement convaincue de la valeur de ce guide que je vous offre une garantie satisfait ou remboursé de 30 jours. Si dans les 30 jours suivant votre achat vous n'êtes pas entièrement satisfait, il vous suffit de m'envoyer un email et je vous rembourserai intégralement sans condition.
-                </p>
-                <p style="font-size: 1.25rem; font-weight: 800; color: var(--pink-accent);">
-                    Je prends 100% du risque sur mes épaules.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 7 : TÉMOIGNAGES (STRUCTURE ÉLOQUENCE 2.0) -->
-    <section style="background: #faf5ff;">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">💬 TÉMOIGNAGES & RÉSULTATS</span>
-                <h2 class="section-title">ILS ONT SUIVI MES CONSEILS ET ACCOMPAGNEMENTS</h2>
-                <p class="section-description">Découvrez les transformations vécues par d'autres hommes dans leur foyer :</p>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px; box-shadow: var(--shadow-md);">
-                    <div style="color: var(--purple-light); font-size: 1.1rem; margin-bottom: 12px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p style="font-style: italic; color: var(--text-dark); margin-bottom: 20px;">“On se disputait souvent pour rien, et ça finissait toujours mal. Grâce au guide, j’ai appris à mieux communiquer et à calmer les tensions. Aujourd’hui, on arrive à se comprendre sans s’énerver.”</p>
-                    <h4 style="font-size: 1.1rem; color: var(--purple-dark);">Alex, 42 ans (Paris)</h4>
-                </div>
-
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px; box-shadow: var(--shadow-md);">
-                    <div style="color: var(--purple-light); font-size: 1.1rem; margin-bottom: 12px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p style="font-style: italic; color: var(--text-dark); margin-bottom: 20px;">“Je pensais que notre relation était foutue… mais ce guide m’a ouvert les yeux sur mes erreurs. En appliquant les conseils, j’ai réussi à recréer une vraie connexion. Franchement, ça fait la différence.”</p>
-                    <h4 style="font-size: 1.1rem; color: var(--purple-dark);">Kevin, 32 ans (Kinshasa)</h4>
-                </div>
-
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px; box-shadow: var(--shadow-md);">
-                    <div style="color: var(--purple-light); font-size: 1.1rem; margin-bottom: 12px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p style="font-style: italic; color: var(--text-dark); margin-bottom: 20px;">“Je ne savais jamais quoi dire pendant les conflits, j’empirais souvent la situation. Les techniques m’ont vraiment aidé à garder mon calme et à gérer les discussions intelligemment. Ça a changé l’ambiance.”</p>
-                    <h4 style="font-size: 1.1rem; color: var(--purple-dark);">Bernard, 37 ans (Bruxelles)</h4>
+        <!-- PAGES 12-15: CHAPITRE 2 -->
+        <div class="pdf-page" id="chapitre-2">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 2</div>
+                    <h1 class="page-h1">Le Miroir de l'Homme</h1>
+                    <div class="page-sub">Avant de la changer elle, regarde-toi. Retrouver sa confiance et son leadership personnel</div>
+                    <p class="para">Je sais que ce n'est pas ce que tu voulais entendre. Tu voulais qu'on te parle d'elle - de ses défauts, de ses excès, de ce qu'elle doit changer. Mais je vais faire quelque chose de plus difficile et de plus utile : je vais te demander de te regarder dans un miroir. Un vrai miroir.</p>
+                    <h2 class="page-h2">L'homme que tu étais vs l'homme que tu es devenu</h2>
+                    <p class="para">Rappelle-toi de l'homme que tu étais quand elle t'a choisi. Tu avais une direction, des projets, une énergie. Tu prenais soin de toi. Tu avais des opinions que tu exprimais. Tu avais des limites que tu tenais. Tu la surprenais. Tu l'écoutais vraiment. Et puis... la routine. Le confort. La vie.</p>
+                    <div class="pdf-metaphor-box">
+                        <div class="pdf-metaphor-header"><i class="fa-solid fa-seedling"></i> La métaphore du jardin</div>
+                        <div class="pdf-metaphor-body">Tu ne laisserais pas ton jardin sans eau et sans soin en te disant 'il a poussé une fois, il poussera toujours'. Un couple, c'est pareil. Ça ne survit pas au manque d'attention - ça se fane, doucement, silencieusement, jusqu'au jour où tu ne reconnais plus ce que c'était.</div>
+                    </div>
+                    <h2 class="page-h2">Les 7 signes que tu as perdu ton leadership personnel</h2>
+                    <ol style="margin-left: 20px; font-size: 0.96rem; line-height: 1.8;">
+                        <li>Tu n'as plus de projets personnels. Ta seule identité, c'est 'le mari de...' ou 'le papa de...'.</li>
+                        <li>Tu ne te fais plus respecter sur des points fondamentaux. Tu ravales. Tu évites. Tu contournes.</li>
+                        <li>Tu as abandonné des passions ou des amitiés importantes pour 'faire plaisir' ou 'éviter les conflits'.</li>
+                        <li>Tu cherches son approbation avant de prendre la moindre décision qui te concerne.</li>
+                        <li>Tu ne prends plus soin de ton corps, de ton image, de ta santé avec la même rigueur qu me'avant.</li>
+                        <li>Tu n'exprimes plus tes émotions - ni ta joie, ni ta colère, ni tes besoins.</li>
+                        <li>Tu te sens défini par ses humeurs. Si elle est bien, tu es bien. Si elle est froide, tu te sens nul.</li>
+                    </ol>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Tu ne peux pas donner à ton couple ce que tu n'as pas d'abord. Un homme vide donne du vide. Un homme plein donne de l'abondance. Remplis-toi d'abord."</p>
+                    </div>
+                    <h2 class="page-h2">Reconquérir ta confiance : les fondations</h2>
+                    <p class="para"><strong>1. Ton corps :</strong> 30 min de sport par jour change la chimie du cerveau et redonne de l'énergie.<br>
+                    <strong>2. Ton esprit :</strong> Continue d'apprendre, de lire, d'évoluer.<br>
+                    <strong>3. Tes projets :</strong> Reprends un projet personnel qui n'appartient qu'à toi.<br>
+                    <strong>4. Tes amis :</strong> Maintiens un cercle masculin solide qui te soutient et te challenge.</p>
                 </div>
             </div>
-
-            <div class="text-center" style="margin-top: 40px;">
-                <a href="https://syalpfmx.mychariow.shop/prd_9n9ofrxp/checkout" class="btn-eloquence" style="margin: 0 auto;">
-                    <span>JE PROFITE DE L'OFFRE MAINTENANT <span class="btn-price-tag">—&nbsp;9&nbsp;900&nbsp;FCFA</span></span>
-                </a>
-            </div>
+            <div class="pdf-footer">-- 11 / 14 --</div>
         </div>
-    </section>
 
-    
-
-    <!-- SECTION 9 : "UNE DÉCISION QUI PEUT TOUT CHANGER" (STRUCTURE ÉLOQUENCE 2.0) -->
-    <section style="background: linear-gradient(180deg, #1a0528 0%, #0d0214 100%); color: #ffffff; padding: 75px 0; border-top: 1px solid rgba(192, 132, 252, 0.2);">
-        <div class="container text-center">
-            <h2 style="font-size: 2.5rem; color: #ffffff; margin-bottom: 20px;">UNE DÉCISION QUI PEUT TOUT CHANGER</h2>
-            <p style="font-size: 1.15rem; color: #cbd5e1; max-width: 820px; margin: 0 auto 30px; line-height: 1.7;">
-                Dans quelques semaines, vous regarderez en arrière et vous verrez ce moment comme un point de bascule. Soit vous aurez saisi cette opportunité de transformer votre communication et de rétablir le respect, soit vous aurez continué comme avant, en laissant les tensions s'accumuler. La décision vous appartient maintenant.
-            </p>
-            <a href="https://syalpfmx.mychariow.shop/prd_9n9ofrxp/checkout" class="btn-eloquence" style="margin: 0 auto;">
-                <span>JE REJOINS "SAUVER TON COUPLE" MAINTENANT <span class="btn-price-tag">—&nbsp;9&nbsp;900&nbsp;FCFA</span></span>
-            </a>
-        </div>
-    </section>
-
-    <!-- SECTION 10 : FOIRE AUX QUESTIONS (STRUCTURE ÉLOQUENCE 2.0) -->
-    <section style="background: #ffffff;">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">❓ FOIRE AUX QUESTIONS</span>
-                <h2 class="section-title">DES QUESTIONS ? NOUS AVONS LES RÉPONSES</h2>
-            </div>
-
-            <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px;">
-                <div style="background: #faf5ff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 30px;">
-                    <h4 style="font-size: 1.2rem; font-weight: 800; color: var(--purple-dark); margin-bottom: 10px;"><i class="fa-solid fa-circle-question text-purple"></i> À qui est destinée cette formation ?</h4>
-                    <p style="color: var(--text-muted); font-size: 1.02rem;">Elle s'adresse à tout homme qui souhaite améliorer sa capacité à communiquer avec impact, apaiser les conflits et rétablir le respect au sein de son couple, même si la relation est actuellement tendue.</p>
-                </div>
-
-                <div style="background: #faf5ff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 30px;">
-                    <h4 style="font-size: 1.2rem; font-weight: 800; color: var(--purple-dark); margin-bottom: 10px;"><i class="fa-solid fa-circle-question text-purple"></i> Combien de temps faut-il pour voir des résultats ?</h4>
-                    <p style="color: var(--text-muted); font-size: 1.02rem;">La plupart des hommes constatent une amélioration immédiate dès la première discussion en appliquant les fiches de désamorçage et le plan d'action sur 30 jours.</p>
-                </div>
-
-                <div style="background: #faf5ff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 30px;">
-                    <h4 style="font-size: 1.2rem; font-weight: 800; color: var(--purple-dark); margin-bottom: 10px;"><i class="fa-solid fa-circle-question text-purple"></i> Que se passe-t-il après mon paiement ?</h4>
-                    <p style="color: var(--text-muted); font-size: 1.02rem;">Vous recevez immédiatement votre lien de téléchargement sécurisé pour accéder à l'ensemble du guide et de ses bonus sur votre téléphone ou ordinateur.</p>
-                </div>
-
-                <div style="background: #faf5ff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 30px;">
-                    <h4 style="font-size: 1.2rem; font-weight: 800; color: var(--purple-dark); margin-bottom: 10px;"><i class="fa-solid fa-circle-question text-purple"></i> Quels moyens de paiement acceptez-vous ?</h4>
-                    <p style="color: var(--text-muted); font-size: 1.02rem;">Nous acceptons la Carte Bancaire (Visa, Mastercard) et tous les Mobile Money d'Afrique (Wave, MTN, Moov, Orange, Airtel, Free, Celtis, Coris, Tmoney).</p>
+        <!-- PAGES 16-19: CHAPITRE 3 -->
+        <div class="pdf-page" id="chapitre-3">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 3</div>
+                    <h1 class="page-h1">L'Art de se Faire Respecter</h1>
+                    <div class="page-sub">Se faire respecter sans crier, sans bouder, et sans perdre ta dignité</div>
+                    <p class="para">Elle t'a dit devant des invités : 'Untel fait ceci, pourquoi toi tu n'es pas capable ?'. Ou alors elle t'a coupé la parole trois fois. Ou elle a pris une décision importante sans te consulter. Et toi ? Tu as souri jaune. Ou tu es sorti claquer la porte. Aucune de ces options ne marche.</p>
+                    <h2 class="page-h2">Les trois réactions inefficaces face au mépris</h2>
+                    <p class="para"><strong>1. La capitulation silencieuse :</strong> Tu ne dis rien, tu ravales. À long terme, ça te détruit.<br>
+                    <strong>2. L'explosion volcanique :</strong> Tu cries, tu claques la porte. Ça valide l'idée que tu es instable.<br>
+                    <strong>3. La vengeance passive :</strong> Tu deviens froid et tu boudes. C'est l'enfant blessé qui se venge.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Ce que tu viens de dire m'a fait mal. Je ne suis pas d'accord pour être parlé comme ça. On peut en discuter si tu veux, mais pas sur ce ton."</p>
+                    </div>
+                    <h2 class="page-h2">La quatrième voie : la frontière calme</h2>
+                    <p class="para">Une frontière calme s'exprime sans hausser la voix, en maintenant son regard. Et puis tu te tais. Tu n'attends pas d'excuse immédiate. Tu maintiens la frontière à chaque fois.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Un lion n'a pas besoin de rappeler aux autres animaux qu'il est un lion. Sa présence suffit. Sois ce lion-là dans ton foyer."</p>
+                    </div>
+                    <div class="pdf-sister-box">
+                        <div class="pdf-sister-header">Conseil de grande sœur</div>
+                        <p style="font-size: 0.95rem; color: #4c0519;">La prochaine fois qu'elle dit quelque chose qui te blesse, compte jusqu'à cinq dans ta tête. Respire. Puis dis exactement ce que tu ressens, sans accusations : 'ce que tu viens de dire m'a fait mal'.</p>
+                    </div>
                 </div>
             </div>
+            <div class="pdf-footer">-- 15 / 18 --</div>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer style="background: #0a0112; color: #94a3b8; padding: 40px 0; text-align: center; border-top: 1px solid rgba(192, 132, 252, 0.2);">
-        <div class="container">
-            <p>Mentions légales | Conditions générales de vente | Politique de confidentialité</p>
-            <p style="margin-top: 8px;">Copyright © 2026 - Tous droits réservés</p>
+        <!-- PAGES 20-23: CHAPITRE 4 -->
+        <div class="pdf-page" id="chapitre-4">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 4</div>
+                    <h1 class="page-h1">Le Lit Froid</h1>
+                    <div class="page-sub">Briser la grève de l'intimité - comprendre le désir féminin et reconnecter sans mendier</div>
+                    <p class="para">Il y a une conversation que presque personne n'ose avoir. Celle du couple qui ne se touche plus. Celui où tu te couches le soir à côté d'elle et où le silence entre vos deux corps est plus lourd que n'importe quelle dispute. Tu ne sais plus comment approcher. Tu as peur d'être rejeté encore une fois.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Pour une femme, le désir commence souvent en dehors de la chambre - dans la cuisine, dans une conversation, dans un regard. Le lit est la conclusion, pas le point de départ."</p>
+                    </div>
+                    <h2 class="page-h2">Ce qui ne marche PAS pour reconnecter</h2>
+                    <ul class="checklist checklist-cross">
+                        <li>Mendier physiquement - ça la met mal à l'aise et ça te fait perdre ta valeur.</li>
+                        <li>Bouder après un refus - ça la culpabilise mais ne crée pas de désir.</li>
+                        <li>Compter les jours et lui annoncer - ça transforme le désir en obligation.</li>
+                        <li>Essayer d'approcher sans aucune reconnexion émotionnelle préalable.</li>
+                    </ul>
+                    <h2 class="page-h2">Comment reconnecter vraiment</h2>
+                    <p class="para"><strong>Étape 1 :</strong> Le retour des petits gestes désintéressés.<br>
+                    <strong>Étape 2 :</strong> La redécouverte de sa féminité (regard et compliments sincères).<br>
+                    <strong>Étape 3 :</strong> Créer des moments juste pour deux sans téléphone ni enfants.<br>
+                    <strong>Étape 4 :</strong> La conversation ouverte et sereine sur l'intimité.</p>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 19 / 22 --</div>
         </div>
-    </footer>
 
-    <!-- Social Proof Live Notification Popup Container -->
-    <div id="social-proof-popup" class="social-proof-popup">
-        <div class="sp-avatar" id="sp-avatar">KO</div>
-        <div class="sp-content">
-            <p class="sp-text"><strong id="sp-name">Koffi</strong> (<span id="sp-country">Togo</span>) vient de rejoindre le programme</p>
-            <p class="sp-time" id="sp-time"><i class="fa-solid fa-circle-check"></i> Il y a quelques instants</p>
+        <!-- PAGES 24-27: CHAPITRE 5 -->
+        <div class="pdf-page" id="chapitre-5">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 5</div>
+                    <h1 class="page-h1">La Communication Haute Tension</h1>
+                    <div class="page-sub">Parler de tes besoins sans que ça finisse en dispute - l'écoute active et l'affirmation de soi</div>
+                    <p class="para">Tu veux dire quelque chose d'important. Tu choisis le moment, tu prends ton courage à deux mains, tu commences à parler. Et dix minutes plus tard, vous vous criez dessus et le sujet de départ est oublié depuis longtemps.</p>
+                    <h2 class="page-h2">Pourquoi les discussions deviennent des disputes</h2>
+                    <p class="para"><strong>Le Cyclone des 4 étapes :</strong> Déclencheur banal ➔ Interprétation rapide à travers le filtre des blessures ➔ Attaque ou repli defensif ➔ Escalade générale.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"On ne résout pas un problème en criant plus fort. On le résout en écoutant plus profondément."</p>
+                    </div>
+                    <h2 class="page-h2">Les 5 règles de la communication qui atterrit</h2>
+                    <ol style="margin-left: 20px; font-size: 0.96rem; line-height: 1.8;">
+                        <li><strong>Choisir le moment et le lieu :</strong> Jamais quand l'un de vous est épuisé ou affamé.</li>
+                        <li><strong>Parler en 'Je', pas en 'Tu' :</strong> 'Je me sens seul' au lieu de 'Tu ne m'écoutes jamais'.</li>
+                        <li><strong>Demander avant d'expliquer :</strong> L'écouter vraiment avant d'exposer ton point de vue.</li>
+                        <li><strong>Mettre des mots sur tes émotions :</strong> Exprimer sa vulnérabilité est une force.</li>
+                        <li><strong>Définir le but :</strong> 'Je veux juste qu'on se comprenne, pas que l'un gagne sur l'autre.'</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 23 / 26 --</div>
         </div>
-        <button class="sp-close" onclick="closeSocialProof()">&times;</button>
+
+        <!-- PAGES 28-31: CHAPITRE 6 -->
+        <div class="pdf-page" id="chapitre-6">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 6</div>
+                    <h1 class="page-h1">Gérer la Tribu</h1>
+                    <div class="page-sub">Famille, belle-famille et influences extérieures - mettre des frontières saines sans faire la guerre</div>
+                    <p class="para">La belle-mère qui appelle trois fois par jour. La sœur qui a toujours son mot à dire. L'ami qui vient s'installer chez vous sans invitation. Ta propre mère qui pense qu'elle a un droit de regard sur votre vie conjugale.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Construis un mur autour de ton foyer - pas pour empêcher l'amour d'entrer, mais pour empêcher le chaos de s'y installer."</p>
+                    </div>
+                    <h2 class="page-h2">Le foyer comme espace sacré</h2>
+                    <p class="para">Quand deux personnes forment un couple, elles créent une entité nouvelle. Cet espace-là - votre maison, votre intimité, vos décisions - est sacré. Protéger cet espace, c'est un acte d'amour envers ton couple.</p>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 27 / 30 --</div>
+        </div>
+
+        <!-- PAGES 32-34: CHAPITRE 7 -->
+        <div class="pdf-page" id="chapitre-7">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 7</div>
+                    <h1 class="page-h1">Éduquer à Deux</h1>
+                    <div class="page-sub">Retrouver son autorité paternelle - faire équipe sur l'éducation sans être contredit</div>
+                    <p class="para">Tu dis non à ton enfant. Elle dit oui. Tu poses une règle. Elle la contourne. Tu essaies de discipliner. Elle te regarde comme si tu étais le méchant de service.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Vos enfants n'ont pas besoin de parents parfaits. Ils ont besoin de parents unis. L'unité est plus puissante que la perfection."</p>
+                    </div>
+                    <h2 class="page-h2">La règle des coulisses</h2>
+                    <p class="para">Les désaccords éducatifs se gèrent en coulisses, jamais devant les enfants. Devant l'enfant, vous êtes un bloc uni.</p>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 31 / 33 --</div>
+        </div>
+
+        <!-- PAGES 35-38: CHAPITRE 8 -->
+        <div class="pdf-page" id="chapitre-8">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 8</div>
+                    <h1 class="page-h1">Transformer la Frustration en Force</h1>
+                    <div class="page-sub">Gérer sa colère et sa solitude émotionnelle - trouver ses propres soutiens</div>
+                    <p class="para">Tu rentres du travail après une journée difficile. Tu n'as rien dit de tout ça parce que 'les hommes ne se plaignent pas'. Tu absorbes les tensions. Et tu exploses sur une assiette mal lavée parce que le vase déborde.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"La force d'un homme ne se mesure pas au fait qu'il ne pleure pas. Elle se mesure à sa capacité à traverser la douleur sans se perdre. Traverser - pas éviter."</p>
+                    </div>
+                    <h2 class="page-h2">L'iceberg de la colère</h2>
+                    <p class="para">La colère est la partie visible de l'iceberg. En dessous se cachent la blessure, la peur, la honte ou la frustration d'un besoin non exprimé.</p>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 34 / 37 --</div>
+        </div>
+
+        <!-- PAGES 39-44: CHAPITRE 9 -->
+        <div class="pdf-page" id="chapitre-9">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 9</div>
+                    <h1 class="page-h1">Le Plan d'Action sur 30 Jours</h1>
+                    <div class="page-sub">Des exercices quotidiens pour transformer l'atmosphère de ta maison, un jour à la fois</div>
+                    <p class="para">La connaissance sans action ne change rien. Trente jours. Un effort quotidien. Des changements concrets dans ton foyer.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Trente jours de petits gestes valent plus qu'une grande déclaration d'amour non suivie d'actes."</p>
+                    </div>
+                    <h2 class="page-h2">Aperçu du Programme sur 30 Jours</h2>
+                    <p class="para"><strong>Semaine 1 (J1-7) :</strong> Observation et Fondations (Inventaire, détox numérique, geste désintéressé, sport, écoute active).<br>
+                    <strong>Semaine 2 (J8-14) :</strong> Communication et Reconnexion (Besoins en 'Je', compliments, rituel du soir, frontière posée, sortie à deux).<br>
+                    <strong>Semaine 3 (J15-21) :</strong> Leadership et Structure (Projet perso, reconnexion amis, intimité sans attente, bilan mi-parcours).<br>
+                    <strong>Semaine 4 (J22-30) :</strong> Consolidation et Vision (Constance, lettre d'intention, vision à 2 ans, grand bilan).</p>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 38 / 43 --</div>
+        </div>
+
+        <!-- PAGES 45-48: CHAPITRE 10 -->
+        <div class="pdf-page" id="chapitre-10">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <div class="chapter-badge">Chapitre 10</div>
+                    <h1 class="page-h1">Quand est-il Temps de Partir ?</h1>
+                    <div class="page-sub">La sagesse de savoir si le combat en vaut encore la peine - et comment le décider avec dignité</div>
+                    <p class="para">C'est le chapitre que j'ai hésité à écrire. Parce que je suis là pour t'aider à sauver ton couple. Mais parfois, la chose la plus courageuse n'est pas de rester. C'est de partir avec dignité, sans haine, et avec lucidité.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Parfois, aimer quelqu'un profondément, c'est aussi reconnaître avec sagesse que le meilleur pour vous deux est un nouveau chemin. Le courage n'est pas toujours dans le fait de rester."</p>
+                    </div>
+                    <h2 class="page-h2">Les signaux d'alerte sérieux</h2>
+                    <ul class="checklist checklist-cross">
+                        <li>La violence physique ou verbale.</li>
+                        <li>L'indifférence totale et le vide émotionnel.</li>
+                        <li>Le refus persistant et catégorique de tout effort commun.</li>
+                        <li>La trahison répétée et sans remise en question.</li>
+                        <li>La mise en danger du bien-être de tes enfants.</li>
+                    </ul>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Certains couples ont besoin de toucher le fond pour trouver la force de remonter ensemble. D'autres ont besoin de se séparer pour grandir séparément. Les deux chemins peuvent mener vers la lumière."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 45 / 47 --</div>
+        </div>
+
+        <!-- PAGES 49-51: CONCLUSION -->
+        <div class="pdf-page" id="conclusion">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <h1 class="page-h1">Conclusion</h1>
+                    <div class="page-sub">Je suis fière de toi, mon frère.</div>
+                    <p class="para">Tu es arrivé jusqu'ici. Et ça, ça compte énormément. Tu as ouvert un guide qui te demandait de te regarder dans un miroir. Tu n'as pas fermé le livre quand ça piquait. Tu n'as pas sauté les chapitres difficiles. Tu as accepté que la vérité - même inconfortable - est plus utile que le confort du mensonge. Ça, ce n'est pas rien.</p>
+                    <p class="para">Tu as appris à nommer ce qui ne va pas sans te noyer dedans. Tu as compris que ta femme n'est pas ton ennemie - elle est quelqu'un qui souffre aussi, à sa façon. Tu as découvert que le respect se construit par la cohérence quotidienne.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"Ce n'est pas l'homme parfait qui sauve son couple. C'est l'homme qui a décidé de ne plus ignorer ce qui ne va pas et de se battre avec courage, amour et lucidité."</p>
+                    </div>
+                    <p class="para">Ce que je veux que tu emportes de ce guide, ce n'est pas une technique. C'est une conviction : <strong>tu as le pouvoir de changer l'atmosphère de ton foyer</strong>. Pas en changeant ta femme - en te changeant toi. En devenant l'homme que tu es capable d'être.</p>
+                    <div class="pdf-quote-box">
+                        <p class="pdf-quote-text">"La version de toi qui a commencé ce guide et la version de toi qui le termine ne sont pas la même personne. Bienvenue dans ta nouvelle peau."</p>
+                    </div>
+                    <p class="para">Si les choses ne s'améliorent pas, sache que le travail que tu auras fait ne sera pas perdu. Il t'aura rendu meilleur, plus fort, plus sage. Mon frère, je suis fière de toi.</p>
+                    <p class="para" style="font-style: italic; font-weight: 700; margin-top: 20px;">Maintenant va. Et sois cet homme.</p>
+                    <div style="text-align: right; font-weight: 800; font-size: 1.3rem; color: var(--accent-magenta); margin-top: 20px; font-style: italic;">
+                        Avec tout mon amour de grande sœur,<br>
+                        Lina Rela
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 48 / 50 --</div>
+        </div>
+
+        <!-- PAGES 52-54: ANNEXE -->
+        <div class="pdf-page" id="annexe">
+            <div>
+                <div class="pdf-header">Lina Rela | Sauver Ton Couple Sans Perdre Ta Dignité</div>
+                <div class="pdf-body">
+                    <h1 class="page-h1">Annexe - Les Outils Essentiels</h1>
+                    <div class="page-sub">Ton guide de référence rapide</div>
+                    <h2 class="page-h2">Les Formules de Communication Essentielles</h2>
+                    <div class="pdf-sister-box">
+                        <div class="pdf-sister-header">Face au manque de respect :</div>
+                        <p class="para"><em>'Ce que tu viens de dire m'a fait mal. Je ne suis pas d'accord pour être parlé comme ça. On peut en discuter si tu veux, mais pas sur ce ton.'</em></p>
+                    </div>
+                    <div class="pdf-sister-box">
+                        <div class="pdf-sister-header">Face à la comparaison :</div>
+                        <p class="para"><em>'Je comprends que tu aies des attentes. Je suis prêt à en discuter. Mais je ne veux pas être comparé à quelqu'un d'autre. Dis-moi directement ce dont tu as besoin.'</em></p>
+                    </div>
+                    <div class="pdf-sister-box">
+                        <div class="pdf-sister-header">Pour initier une conversation importante :</div>
+                        <p class="para"><em>'J'aimerais qu'on parle de quelque chose qui me tient à cœur, pas pour se disputer, juste pour qu'on se comprenne mieux. Tu aurais un moment ce soir ?'</em></p>
+                    </div>
+                    <div class="pdf-sister-box">
+                        <div class="pdf-sister-header">Pour exprimer un besoin en 'Je' :</div>
+                        <p class="para"><em>'Je me sens [émotion] quand [situation]. J'aurais besoin de [besoin précis].'</em></p>
+                    </div>
+                    <h2 class="page-h2">Les 10 Règles d'Or de Lina Rela</h2>
+                    <ol style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+                        <li>Un homme qui se respecte inspire le respect. Un homme qui s'efface l'invite à disparaître.</li>
+                        <li>La colère est de l'information. Avant d'exploser, demande-toi ce qu me'elle essaie de te dire.</li>
+                        <li>L'écoute active est ton arme la plus puissante dans une dispute.</li>
+                        <li>Parle toujours en 'Je', jamais en 'Tu' accusateur.</li>
+                        <li>La cohérence vaut plus que la perfection. Fais ce que tu dis, toujours.</li>
+                        <li>Ton foyer est sacré. Protège-le des influences extérieures.</li>
+                        <li>Un homme avec un projet est infiniment plus attractif qu'un homme sans direction.</li>
+                        <li>Le corps, l'esprit, les projets, les amis - tout ça nourrit ton couple.</li>
+                        <li>L'intimité physique revient quand l'intimité émotionnelle est restaurée.</li>
+                        <li>Sauver ton couple commence par te sauver toi-même.</li>
+                    </ol>
+                    <div style="text-align: right; margin-top: 30px; font-weight: 800; font-size: 1.2rem; color: var(--accent-magenta); font-style: italic;">
+                        Lina Rela<br>
+                        <span style="font-size: 0.9rem; font-weight: 400; color: #666;">Coach Relationnelle | Grande sœur du monde entier</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer">-- 51 / 53 --</div>
+        </div>
+
     </div>
 
-    <!-- Countdown Timer & Social Proof Popup Script -->
-    <script>
-        function startTimer(duration, display) {
-            let timer = duration, hours, minutes, seconds;
-            setInterval(function () {
-                hours = parseInt(timer / 3600, 10);
-                minutes = parseInt((timer % 3600) / 60, 10);
-                seconds = parseInt(timer % 60, 10);
-
-                hours = hours < 10 ? "0" + hours : hours;
-                minutes = minutes < 10 ? "0" + minutes : minutes;
-                seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                display.textContent = hours + ":" + minutes + ":" + seconds;
-
-                if (--timer < 0) {
-                    timer = duration;
-                }
-            }, 1000);
-        }
-
-        const europeWorldMap = {
-            "France": ["Antoine", "Julien", "Nicolas", "Alexandre", "Thomas", "Romain", "Guillaume", "Mathieu", "Maxime", "Stéphane", "François", "Vincent", "Olivier", "Sébastien", "Clément", "Pierre", "Hugo", "Lucas"],
-            "Belgique": ["Bernard", "Luc", "Thierry", "Marc", "Philippe", "Dirk", "Jan", "Xavier", "Laurent", "Benoît"],
-            "Suisse": ["Marc", "Pascal", "Alain", "Beat", "Stefan", "Reto", "Daniel", "Patrick", "Christian"],
-            "Canada": ["Sébastien", "Jean-Philippe", "Mathieu", "Étienne", "Éric", "Maxime", "Alexandre", "Francis"],
-            "Luxembourg": ["Claude", "Luc", "Gilles", "Marc", "Jean", "Fernand"],
-            "Espagne": ["Carlos", "Javier", "Alejandro", "Manuel", "David", "Antonio", "Miguel", "Daniel", "Mateo"],
-            "Italie": ["Marco", "Matteo", "Alessandro", "Luca", "Francesco", "Andrea", "Giuseppe", "Lorenzo"],
-            "Allemagne": ["Markus", "Stefan", "Michael", "Thomas", "Alexander", "Lukas", "Andreas", "Daniel"],
-            "Royaume-Uni": ["James", "David", "Andrew", "Paul", "Mark", "Christopher", "John", "Michael"],
-            "Portugal": ["Joaquim", "Miguel", "Gonçalo", "João", "Tiago", "Pedro", "Diogo", "André"],
-            "Pays-Bas": ["Lars", "Sven", "Jan", "Pieter", "Mark", "Daan", "Thijs"],
-            "Guadeloupe": ["Jean-Claude", "Rodrigue", "Fabrice", "Ludovic", "Patrick", "Samuel"],
-            "Martinique": ["Jean-Luc", "Rodrigue", "Steeve", "Ludovic", "Jean-Marc"],
-            "La Réunion": ["Jean-Daniel", "Fabrice", "Loïc", "Julien", "Olivier"]
-        };
-
-        const africaMap = {
-            "Côte d'Ivoire": ["Yao", "Kouadio", "Konan", "Bakary", "Seydou", "Lassina", "Brou", "Adama", "Ibrahim", "Souleymane", "Karamoko"],
-            "Sénégal": ["Mamadou", "Ousmane", "Ibrahima", "Cheikh", "Babacar", "Lamine", "Modou", "Samba", "Abdoulaye", "Boubacar"],
-            "Togo": ["Koffi", "Kossi", "Mensah", "Komlan", "Mawuli", "Edoh", "Yao", "Folly", "Dodji", "Ablam"],
-            "Cameroun": ["Patrick", "Christian", "Rodrigue", "Landry", "Wilfried", "Armel", "Alain", "Serge", "Dieudonné", "Brice"],
-            "Bénin": ["Clément", "Rodrigue", "Gildas", "Romuald", "Hyacinthe", "Fabrice", "Marcelin", "Gaston"],
-            "RDC": ["Ebenezer", "Junior", "Christian", "Trésor", "Dieudonné", "Patrick", "Bienvenu", "Patient", "Glody"],
-            "Mali": ["Sidiki", "Modibo", "Fousseyni", "Drissa", "Sekou", "Karamoko", "Mahamadou", "Lassana", "Salif"],
-            "Burkina Faso": ["Édouard", "Brahima", "Pingdwendé", "Sayouba", "Moussa", "Aziz", "Lassané"],
-            "Gabon": ["Alain", "Brice", "Guy-Roger", "Ulrich", "Fabrice", "Stéphane", "Donald"],
-            "Guinée": ["Mohamed", "Alpha", "Ansoumane", "Naby", "Fodé", "Chérif", "Mamadou", "Sekou"],
-            "Haïti": ["Jean-Baptiste", "Dieuson", "Patrick", "Fritz", "Jacques"],
-            "Maurice": ["Jean-Marc", "Kevyn", "Alain", "Vijay", "Rajen"]
-        };
-
-        const timesPool = [
-            "Il y a quelques instants",
-            "Il y a 3 minutes",
-            "Il y a 7 minutes",
-            "Il y a 12 minutes",
-            "Il y a 18 minutes",
-            "Il y a 24 minutes",
-            "Il y a 35 minutes",
-            "Il y a 48 minutes",
-            "Il y a 1 heure",
-            "Il y a 2 heures",
-            "Il y a 3 heures",
-            "Il y a 5 heures",
-            "Il y a 8 heures",
-            "Il y a 12 heures",
-            "Il y a 1 jour",
-            "Il y a 2 jours"
-        ];
-
-        function generateInterleavedSocialProofs() {
-            const list = [];
-            const euCountries = Object.keys(europeWorldMap);
-            const afCountries = Object.keys(africaMap);
-            
-            let euIdx = 0;
-            let afIdx = 0;
-            let timeIdx = 0;
-
-            for (let i = 0; i < 200; i++) {
-                // Alternating pattern: 1 or 2 Europe/World, then 1 or 2 Africa
-                const isEurope = (i % 3 === 0 || i % 3 === 1);
-                
-                let cty, namesForCty, fn;
-                if (isEurope) {
-                    cty = euCountries[euIdx % euCountries.length];
-                    namesForCty = europeWorldMap[cty];
-                    fn = namesForCty[euIdx % namesForCty.length];
-                    euIdx++;
-                } else {
-                    cty = afCountries[afIdx % afCountries.length];
-                    namesForCty = africaMap[cty];
-                    fn = namesForCty[afIdx % namesForCty.length];
-                    afIdx++;
-                }
-
-                const tm = timesPool[timeIdx % timesPool.length];
-                timeIdx += 3;
-
-                const initials = fn.substring(0, 2).toUpperCase();
-                
-                list.push({
-                    name: fn,
-                    country: cty,
-                    initials: initials,
-                    time: tm
-                });
-            }
-            return list;
-        }
-
-        const socialProofData = generateInterleavedSocialProofs();
-
-        let spIndex = 0;
-
-        function showSocialProof() {
-            const popup = document.getElementById('social-proof-popup');
-            if (!popup) return;
-
-            const item = socialProofData[spIndex];
-            document.getElementById('sp-avatar').textContent = item.initials;
-            document.getElementById('sp-name').textContent = item.name;
-            document.getElementById('sp-country').textContent = item.country;
-            document.getElementById('sp-time').innerHTML = '<i class="fa-solid fa-circle-check"></i> ' + item.time;
-
-            popup.classList.add('active');
-
-            // Hides popup smoothly after 4.5 seconds
-            setTimeout(function() {
-                popup.classList.remove('active');
-            }, 4500);
-
-            // Move to next purchaser
-            spIndex = (spIndex + 1) % socialProofData.length;
-        }
-
-        function closeSocialProof() {
-            const popup = document.getElementById('social-proof-popup');
-            if (popup) popup.classList.remove('active');
-        }
-
-        window.onload = function () {
-            let twentyFourHours = 24 * 3600 - 1,
-                display = document.querySelector('#countdown');
-            startTimer(twentyFourHours, display);
-
-            // Launch first social proof popup after 2 seconds
-            setTimeout(showSocialProof, 2000);
-
-            // Repeat social proof popup every 10 seconds (10000ms)
-            setInterval(showSocialProof, 10000);
-        };
-    </script>
-        <!-- Master Language Synchronization & Translation Engine -->
-    <div id="google_translate_element" style="position: absolute; left: -9999px; top: -9999px; opacity: 0; pointer-events: none;"></div>
+    <!-- JavaScript Navigation & Google Translate Integration -->
     <script type="text/javascript">
+        function scrollToSection(targetId) {
+            if (!targetId) return;
+            var cleanId = targetId.replace('#', '');
+            var elem = document.getElementById(cleanId);
+            if (elem) {
+                elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (history.pushState) {
+                    history.pushState(null, null, '#' + cleanId);
+                } else {
+                    location.hash = '#' + cleanId;
+                }
+                var quickSelect = document.getElementById('quick-chapter-select');
+                if (quickSelect) {
+                    quickSelect.value = cleanId;
+                }
+            }
+        }
+
+        // Attach click listeners to all internal anchor links for smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    var href = this.getAttribute('href');
+                    if (href && href.length > 1) {
+                        e.preventDefault();
+                        scrollToSection(href.substring(1));
+                    }
+                });
+            });
+
+            // Handle hash on page load (e.g. #conclusion)
+            if (window.location.hash) {
+                setTimeout(function() {
+                    scrollToSection(window.location.hash);
+                }, 300);
+            }
+        });
+
+        // Google Translate Cookie & LocalStorage Logic
         function setTranslateCookie(langCode) {
             var domain = window.location.hostname;
             var cookieVal = "/fr/" + langCode;
-            
-            // Clear old cookies across paths and domains
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + domain + ";";
-            
-            // Set new cookie
             document.cookie = "googtrans=" + cookieVal + "; path=/;";
             if (domain && domain !== 'localhost' && domain !== '127.0.0.1') {
                 document.cookie = "googtrans=" + cookieVal + "; path=/; domain=" + domain + ";";
@@ -2906,8 +1052,7 @@
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + domain + ";";
             document.cookie = "googtrans=/fr/fr; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            document.cookie = "googtrans=/fr/fr; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + domain + ";";
-            localStorage.removeItem('landing_selected_lang');
+            localStorage.removeItem('selected_landing_lang');
         }
 
         function googleTranslateElementInit() {
@@ -2924,70 +1069,96 @@
                 location.reload();
                 return;
             }
-
-            localStorage.setItem('landing_selected_lang', langCode);
+            localStorage.setItem('selected_landing_lang', langCode);
             setTranslateCookie(langCode);
-
-            // Update custom dropdown UI immediately
-            var selectElem = document.getElementById('custom-language-select');
-            if (selectElem) {
-                selectElem.value = langCode;
-            }
-
-            // Attempt to trigger GT combo directly if available
             var googleSelect = document.querySelector('.goog-te-combo');
             if (googleSelect) {
                 googleSelect.value = langCode;
                 googleSelect.dispatchEvent(new Event('change'));
             }
-
-            // Refresh page so Google Translate processes the cookie cleanly across the document
+            var selectElem = document.getElementById('custom-language-select');
+            if (selectElem) {
+                selectElem.value = langCode;
+            }
             setTimeout(function() {
                 location.reload();
             }, 150);
         }
 
         function syncLanguageDropdownUI() {
-            var savedLang = localStorage.getItem('landing_selected_lang');
+            var savedLang = localStorage.getItem('selected_landing_lang');
             var match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
             var activeLang = savedLang || 'fr';
-
             if (match && match[1]) {
                 var parts = match[1].split('/');
                 if (parts.length >= 3 && parts[2]) {
                     activeLang = parts[2];
                 }
             }
-
             var selectElem = document.getElementById('custom-language-select');
-            if (selectElem && activeLang && selectElem.value !== activeLang) {
+            if (selectElem && activeLang) {
                 selectElem.value = activeLang;
             }
         }
 
-        function hideGTBanner() {
-            var banners = document.querySelectorAll('.goog-te-banner-frame, iframe.skiptranslate, .VIpgJd-Z44p5e-FW12eb-tjhup');
-            banners.forEach(function(b) {
-                b.style.display = 'none';
-                b.style.visibility = 'hidden';
-            });
-            if (document.body.style.top !== '0px') {
-                document.body.style.top = '0px';
+        document.addEventListener('DOMContentLoaded', syncLanguageDropdownUI);
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <div id="google_translate_element" style="display:none!important;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr',
+                includedLanguages: 'fr,en,es,de,it,pt,nl,ar,tr,ru,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function changePageLanguage(langCode) {
+            if (!langCode) return;
+            localStorage.setItem('selected_pdf_language', langCode);
+            var select = document.querySelector('.goog-te-combo');
+            if (select) {
+                select.value = langCode;
+                select.dispatchEvent(new Event('change'));
+            } else {
+                var attempts = 0;
+                var interval = setInterval(function() {
+                    attempts++;
+                    var s = document.querySelector('.goog-te-combo');
+                    if (s) {
+                        s.value = langCode;
+                        s.dispatchEvent(new Event('change'));
+                        clearInterval(interval);
+                    }
+                    if (attempts > 20) clearInterval(interval);
+                }, 300);
             }
         }
 
-        // Event Listeners for Bulletproof Sync
-        document.addEventListener('DOMContentLoaded', function() {
-            syncLanguageDropdownUI();
-            hideGTBanner();
+        function scrollToSection(id) {
+            var elem = document.getElementById(id);
+            if (elem) {
+                elem.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            var savedLang = localStorage.getItem('selected_pdf_language');
+            if (savedLang) {
+                var langSelect = document.getElementById('custom-language-select');
+                if (langSelect) langSelect.value = savedLang;
+                setTimeout(function() {
+                    changePageLanguage(savedLang);
+                }, 1000);
+            }
         });
-        window.addEventListener('load', function() {
-            syncLanguageDropdownUI();
-            hideGTBanner();
-        });
-        setInterval(syncLanguageDropdownUI, 500);
-        setInterval(hideGTBanner, 100);
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
+
 </html>
